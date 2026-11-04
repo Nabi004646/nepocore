@@ -1,0 +1,36 @@
+# Nepocore
+
+> Free browser tools for everyday work, study and creativity.
+
+Nepocore is a free collection of 227 browser-based tools and 35 practical guides. Interactive tools require JavaScript; the guides and tool instructions are available in static HTML. Most tools process input on the visitor's device. Some optional engines download models or libraries from third-party services, and online system voices may use their provider. The privacy policy describes these exceptions. Health, financial and study outputs have tool-specific assumptions and limits.
+
+## Start here
+
+- [Home](https://nepocore.com/): Overview and tool discovery.
+- [All tools](https://nepocore.com/tools/): Searchable catalogue of all free tools.
+- [Practical guides](https://nepocore.com/blog/): Original walkthroughs, worked examples and source references.
+- [Worksheet Studio](https://nepocore.com/worksheets/): Printable worksheet generators with browser previews and downloads.
+- [Worksheet guides](https://nepocore.com/worksheets/guides/): Practical instructions for planning and printing practice sheets.
+
+## Tool collections
+
+- [Image tools](https://nepocore.com/categories/images/): 17 tools in this collection.
+- [PDF tools](https://nepocore.com/categories/pdf/): 8 tools in this collection.
+- [Calculators](https://nepocore.com/categories/calculators/): 29 tools in this collection.
+- [Creator studio](https://nepocore.com/categories/creators/): 11 tools in this collection.
+- [Study & IELTS](https://nepocore.com/categories/study/): 12 tools in this collection.
+- [Developer tools](https://nepocore.com/categories/developer/): 28 tools in this collection.
+- [Nepal tools](https://nepocore.com/categories/nepal/): 8 tools in this collection.
+- [Education & worksheets](https://nepocore.com/categories/education/): 5 tools in this collection.
+
+## Optional
+
+- [Expanded public directory](https://nepocore.com/llms-full.txt): All tool and guide links, organized by subject.
+- [XML sitemap](https://nepocore.com/sitemap.xml): Canonical indexable page URLs for search discovery.
+- [RSS feed](https://nepocore.com/blog/feed.xml): Practical guide updates.
+- [About](https://nepocore.com/about/): Project background.
+- [Privacy](https://nepocore.com/privacy/): Local processing, browser storage and service exceptions.
+- [Terms](https://nepocore.com/terms/): Terms of use.
+- [Editorial policy](https://nepocore.com/editorial-policy/): Content preparation and corrections.
+- [Accessibility](https://nepocore.com/accessibility/): Accessibility information.
+- [Contact](https://nepocore.com/contact/): Contact and feedback.

@@ -86,3 +86,14 @@ Use PageSpeed Insights (https://pagespeed.web.dev/) on the homepage, a tool page
 ## One-time external link review
 
 On November 4, 2026, all 46 unique external references linked by generated HTML were attempted through public retrieval. Forty-one were reachable, including one repository confirmed through the GitHub API. Five could not be confirmed because of access restrictions, minimal responses or timeouts; none was identified as a definite broken link. See [EXTERNAL_LINK_REVIEW.json](EXTERNAL_LINK_REVIEW.json). These results are separate from the deterministic offline build audit and do not guarantee future third-party availability.
+
+## Published discovery resources
+
+- `/robots.txt`: crawler rules and the canonical XML sitemap location.
+- `/sitemap.xml`: all indexable static pages, including Worksheet Studio.
+- `/llms.txt`: concise public site overview with curated links.
+- `/llms-full.txt`: expanded tool/guide directory with canonical links and short descriptions. It is not a full-text copy of every page.
+- `/blog/feed.xml`: RSS guide updates.
+- `/manifest.webmanifest`: installable app metadata; this is not a search ranking file.
+
+The LLM files are generated from the current catalogue on every build and advertised using a `Link` response header with `rel="describedby"`. Common singular spellings `/robot.txt` and `/llm.txt` redirect to their canonical resource names. The llms.txt format is an optional discovery proposal, not a replacement for robots.txt or sitemap.xml and not a promise of Google rankings or AI citations. Specification: https://llmstxt.org/ .

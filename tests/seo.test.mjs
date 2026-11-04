@@ -22,3 +22,21 @@ test('Homepage build and client navigation both render the workshop redesign', a
   assert.doesNotMatch(html,/<section class="hero">/);
  }
 });
+
+test('Crawler and LLM discovery files link to real canonical public resources',async()=>{
+ const cfg=JSON.parse(await read('site-config.json')),base=new URL(cfg.site_url);
+ const brief=await read('llms.txt'),full=await read('llms-full.txt');
+ assert.match(brief,/^# Nepocore\n\n>/);
+ assert.match(brief,/llms-full\.txt/);
+ assert.ok(brief.length<12000,'Keep the discovery overview concise');
+ for(const t of tools)assert.ok(full.includes(new URL('tools/'+t.id+'/',base).href),t.id);
+ for(const content of [brief,full])for(const [,value]of content.matchAll(/\]\((https?:\/\/[^)]+)\)/g)){
+  const u=new URL(value);assert.equal(u.origin,base.origin);assert.equal(u.search,'');assert.equal(u.hash,'');
+  const relative=decodeURIComponent(u.pathname.slice(base.pathname.length));
+  assert.doesNotMatch(relative,/^(?:favorites|notfound|admin)(?:\/|$)/);
+  const file=path.join(dist,relative,(!relative||relative.endsWith('/'))?'index.html':'');
+  assert.ok((await stat(file)).isFile(),value);
+ }
+ assert.match(await read('_headers'),/Link: <https?:\/\/[^>]+\/llms\.txt>; rel="describedby"/);
+ assert.match(await read('_redirects'),/\/llm\.txt \/llms\.txt 301/);
+});

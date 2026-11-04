@@ -1,0 +1,400 @@
+# Nepocore: expanded public directory
+
+> Canonical links and descriptions for the public tool catalogue and practical guides. This is a directory, not the full text of every page.
+
+Nepocore is a free collection of 227 browser-based tools and 35 practical guides. Interactive tools require JavaScript; the guides and tool instructions are available in static HTML. Most tools process input on the visitor's device. Some optional engines download models or libraries from third-party services, and online system voices may use their provider. The privacy policy describes these exceptions. Health, financial and study outputs have tool-specific assumptions and limits.
+
+## Main resources
+
+- [Home](https://nepocore.com/): Overview and tool discovery.
+- [All tools](https://nepocore.com/tools/): Searchable catalogue of all free tools.
+- [Practical guides](https://nepocore.com/blog/): Original walkthroughs, worked examples and source references.
+- [Worksheet Studio](https://nepocore.com/worksheets/): Printable worksheet generators with browser previews and downloads.
+- [Worksheet guides](https://nepocore.com/worksheets/guides/): Practical instructions for planning and printing practice sheets.
+
+## Image tools
+
+- [Image tools](https://nepocore.com/categories/images/): Collection index.
+- [Image converter](https://nepocore.com/tools/image-converter/): Switch between JPEG, PNG and WebP.
+- [Image compressor](https://nepocore.com/tools/image-compressor/): Lighter images. A faster everything.
+- [Image resizer](https://nepocore.com/tools/image-resizer/): The right dimensions, every time.
+- [Photo cropper](https://nepocore.com/tools/image-cropper/): Keep the part that matters most.
+- [Rotate & flip](https://nepocore.com/tools/image-rotate/): Give your photo a fresh perspective.
+- [Background remover](https://nepocore.com/tools/background-remover/): A clean cutout, without the busy background.
+- [Image color palette](https://nepocore.com/tools/image-palette/): Find the colors hiding in your photos.
+- [Image to text · OCR](https://nepocore.com/tools/image-to-text/): Turn screenshots into editable English or Nepali text.
+- [Photo filter editor](https://nepocore.com/tools/image-filters/): Fine-tune brightness, contrast and color.
+- [Image to Base64](https://nepocore.com/tools/image-to-base64/): Turn an image into an embeddable data URL.
+- [Base64 to image](https://nepocore.com/tools/base64-to-image/): Preview and download an encoded image.
+- [Image metadata remover](https://nepocore.com/tools/metadata-remover/): Export a fresh image without the original EXIF data.
+- [Photo redactor](https://nepocore.com/tools/photo-redactor/): Cover a sensitive area with a solid rectangle.
+- [Pixel art upscaler](https://nepocore.com/tools/pixel-upscaler/): Keep hard pixel edges when enlarging small art.
+- [Round profile picture](https://nepocore.com/tools/round-avatar/): Make a circular avatar with transparent corners.
+- [Passport photo layout editor](https://nepocore.com/tools/passport-photo/): Crop to editable sizes and print a photo sheet.
+- [Photo to pixel art](https://nepocore.com/tools/photo-pixel-art/): Turn a photo into a crisp pixel-style image.
+
+## Creator studio
+
+- [Creator studio](https://nepocore.com/categories/creators/): Collection index.
+- [Meme maker](https://nepocore.com/tools/meme-generator/): Your image. Your punchline. Ready to share.
+- [Social image resizer](https://nepocore.com/tools/social-resizer/): Post, story, square or thumbnail. One easy export.
+- [Screenshot studio](https://nepocore.com/tools/screenshot-studio/): Give screenshots a beautiful, shareable frame.
+- [Watermark maker](https://nepocore.com/tools/watermark/): Add your name or brand to an image.
+- [Favicon maker](https://nepocore.com/tools/favicon-maker/): Tiny icons with a little personality. PNG and ICO.
+- [Photo collage](https://nepocore.com/tools/photo-collage/): Bring up to nine moments into one frame.
+- [Quote card maker](https://nepocore.com/tools/quote-card/): Make your words worth stopping for.
+- [Drawn signature maker](https://nepocore.com/tools/signature-maker/): Draw a signature and save a transparent PNG.
+- [Comic strip creator](https://nepocore.com/tools/comic-strip/): Combine your photos, captions and speech bubbles.
+- [3D text poster maker](https://nepocore.com/tools/text-3d/): Layer shadows, colors and depth into bold text.
+- [Anime character creator](https://nepocore.com/tools/anime-character/): Design an original chibi character. Choose hair, eyes, outfits and accessories.
+
+## Calculators
+
+- [Calculators](https://nepocore.com/categories/calculators/): Collection index.
+- [Scientific calculator](https://nepocore.com/tools/calculator/): From quick sums to bigger questions.
+- [Percentage calculator](https://nepocore.com/tools/percentage/): Percentages, made a little less puzzling.
+- [Discount & tax](https://nepocore.com/tools/discount/): Know the final price before checkout.
+- [Loan & EMI calculator](https://nepocore.com/tools/loan/): Plan monthly repayments with clarity.
+- [Compound interest](https://nepocore.com/tools/compound/): See how your savings can grow.
+- [Tip & bill splitter](https://nepocore.com/tools/tip/): Good company. Fairly split bills.
+- [Age calculator](https://nepocore.com/tools/age/): Years, months and little milestones.
+- [Date difference](https://nepocore.com/tools/date-difference/): Find the days between two dates.
+- [Unit converter](https://nepocore.com/tools/unit-converter/): Lengths, weights, temperatures and more.
+- [BMI calculator](https://nepocore.com/tools/bmi/): A quick adult body mass index calculation.
+- [Aspect ratio](https://nepocore.com/tools/aspect-ratio/): Find the perfect proportions.
+- [Savings goal](https://nepocore.com/tools/savings/): Turn a future goal into a monthly plan.
+- [Average & statistics](https://nepocore.com/tools/statistics/): Mean, median, modes and standard deviation.
+- [Fraction calculator](https://nepocore.com/tools/fractions/): Add, subtract, multiply and divide exact fractions.
+- [Scientific notation converter](https://nepocore.com/tools/scientific-notation/): Move between decimal and scientific notation.
+- [Ratio splitter](https://nepocore.com/tools/ratio-splitter/): Divide an amount into proportional shares.
+- [Number rounding tool](https://nepocore.com/tools/number-rounder/): Round, floor or ceil to decimal places.
+- [Time duration calculator](https://nepocore.com/tools/duration-calculator/): Add or subtract hours, minutes and seconds.
+- [Speed, distance & time](https://nepocore.com/tools/speed-distance-time/): Find the missing part of a journey.
+- [Fuel & trip cost](https://nepocore.com/tools/fuel-cost/): Estimate fuel needed and share the trip cost.
+- [Electricity cost calculator](https://nepocore.com/tools/electricity-cost/): See what an appliance costs to run.
+- [Simple interest calculator](https://nepocore.com/tools/simple-interest/): Principal, interest and final balance.
+- [Inflation calculator](https://nepocore.com/tools/inflation/): Compare future cost and purchasing power.
+- [Return on investment](https://nepocore.com/tools/roi/): Work out gain, return and annualized growth.
+- [Break-even calculator](https://nepocore.com/tools/break-even/): Find how many units cover your fixed costs.
+- [Margin & markup](https://nepocore.com/tools/profit-margin/): Compare profit, margin and markup clearly.
+- [Salary & wage converter](https://nepocore.com/tools/salary-converter/): Convert hourly, daily, weekly and annual pay.
+- [Add or subtract days](https://nepocore.com/tools/date-offset/): Find a date a chosen number of days away.
+- [Working days calculator](https://nepocore.com/tools/working-days/): Count weekdays or add business days.
+
+## Study & IELTS
+
+- [Study & IELTS](https://nepocore.com/categories/study/): Collection index.
+- [IELTS band calculator](https://nepocore.com/tools/ielts-overall/): Four scores. One clear overall band.
+- [IELTS listening score](https://nepocore.com/tools/ielts-listening/): Turn practice marks into an estimated band.
+- [IELTS reading score](https://nepocore.com/tools/ielts-reading/): Academic and General Training estimates.
+- [Weighted GPA calculator](https://nepocore.com/tools/gpa-calculator/): Combine grade points and course credits.
+- [Final grade calculator](https://nepocore.com/tools/grade-needed/): Find the exam score needed for your target.
+- [Reading speed test](https://nepocore.com/tools/reading-speed/): Time your reading and estimate words per minute.
+- [Study session planner](https://nepocore.com/tools/study-plan/): Turn available time into focused sessions.
+- [Typing speed & accuracy](https://nepocore.com/tools/typing-test/): Measure typing speed and character accuracy against a visible passage.
+- [Spaced-repetition flashcards](https://nepocore.com/tools/flashcards/): Practice your own question-and-answer cards with a simple review schedule.
+- [Negative marking calculator](https://nepocore.com/tools/negative-marking/): Calculate exam marks from correct, incorrect and unanswered questions.
+- [APA & MLA citation formatter](https://nepocore.com/tools/citation-formatter/): Build a basic webpage, book or journal citation from entered source details.
+- [Attendance target calculator](https://nepocore.com/tools/attendance-target/): Find classes needed or classes you can miss while keeping a chosen percentage.
+
+## Text tools
+
+- [Text tools](https://nepocore.com/categories/text/): Collection index.
+- [Word & character counter](https://nepocore.com/tools/word-counter/): Every word, character and minute counted.
+- [Text case converter](https://nepocore.com/tools/case-converter/): UPPER, lower, Title. Your call.
+- [Text cleaner](https://nepocore.com/tools/text-cleaner/): Tidy up extra spaces and duplicate lines.
+- [Text comparison](https://nepocore.com/tools/text-compare/): Spot the lines that changed.
+- [Lorem ipsum generator](https://nepocore.com/tools/lorem-ipsum/): A little placeholder for your next big idea.
+- [SRT ↔ VTT converter](https://nepocore.com/tools/subtitle-converter/): Clean subtitles, ready for your next video.
+- [Emoji picker](https://nepocore.com/tools/emoji-picker/): Find a little expression. Copy it in a click.
+- [Sort text lines](https://nepocore.com/tools/sort-lines/): Sort alphabetically, naturally or by length.
+- [Reverse text](https://nepocore.com/tools/reverse-text/): Reverse characters, words or whole lines.
+- [Find & replace text](https://nepocore.com/tools/find-replace/): Replace a literal phrase safely and quickly.
+- [Remove Latin accents](https://nepocore.com/tools/remove-accents/): Convert accented Latin letters into simpler text.
+- [HTML to plain text](https://nepocore.com/tools/html-to-text/): Extract readable text from HTML markup.
+- [Text to list](https://nepocore.com/tools/text-to-list/): Make HTML or Markdown lists from lines.
+- [Text to speech](https://nepocore.com/tools/text-to-speech/): Listen to your text with your browser’s voices, speed and pitch controls.
+- [All-in-one text formatter](https://nepocore.com/tools/text-formatter/): Change case, clean spaces, count words and copy tidy text.
+
+## Developer tools
+
+- [Developer tools](https://nepocore.com/categories/developer/): Collection index.
+- [JSON formatter](https://nepocore.com/tools/json-formatter/): Readable, validated and neatly arranged.
+- [Base64 encoder / decoder](https://nepocore.com/tools/base64/): Encode and decode UTF-8 text.
+- [URL encoder / decoder](https://nepocore.com/tools/url-encoder/): Keep special characters URL-ready.
+- [Password generator](https://nepocore.com/tools/password/): Strong random passwords, made locally.
+- [UUID generator](https://nepocore.com/tools/uuid/): Fresh version 4 identifiers in a click.
+- [SHA hash generator](https://nepocore.com/tools/hash/): A digital fingerprint for your text.
+- [Unix timestamp converter](https://nepocore.com/tools/timestamp/): Make sense of seconds since 1970.
+- [Color converter](https://nepocore.com/tools/color-converter/): HEX, RGB and HSL, all in sync.
+- [UTM link builder](https://nepocore.com/tools/utm-builder/): Keep campaign links clear and consistent.
+- [CSS gradient maker](https://nepocore.com/tools/gradient-generator/): A smooth new direction for your next design.
+- [Glass effect generator](https://nepocore.com/tools/glassmorphism/): Design a frosted-glass card. Copy the CSS.
+- [Color contrast checker](https://nepocore.com/tools/contrast-checker/): Check readable color combinations against WCAG.
+- [Markdown to HTML](https://nepocore.com/tools/markdown-to-html/): Write Markdown. Preview and export clean HTML.
+- [JSON to CSV](https://nepocore.com/tools/json-to-csv/): Turn a list of objects into a tidy spreadsheet.
+- [Number base converter](https://nepocore.com/tools/base-converter/): Binary, octal, decimal and hexadecimal.
+- [URL slug generator](https://nepocore.com/tools/slug-generator/): Make a clean, readable page slug.
+- [HTML entity encoder](https://nepocore.com/tools/html-entities/): Escape or decode HTML text characters.
+- [Regular expression tester](https://nepocore.com/tools/regex-tester/): Test a pattern with matched text and groups.
+- [JWT decoder](https://nepocore.com/tools/jwt-decoder/): Inspect token headers and payloads locally.
+- [CSV to JSON](https://nepocore.com/tools/csv-to-json/): Convert a table into structured records.
+- [XML formatter & validator](https://nepocore.com/tools/xml-formatter/): Check XML and make nesting easier to read.
+- [JSON comparison](https://nepocore.com/tools/json-compare/): Compare structured values by their paths.
+- [Cron expression builder](https://nepocore.com/tools/cron-builder/): Build common five-field UTC schedules.
+- [CSS box-shadow maker](https://nepocore.com/tools/box-shadow/): Preview and copy a custom shadow.
+- [CSS corner radius maker](https://nepocore.com/tools/border-radius/): Shape each corner and copy the CSS.
+- [Fluid font-size generator](https://nepocore.com/tools/css-clamp/): Build a responsive CSS clamp expression.
+- [Color harmony palette](https://nepocore.com/tools/palette-generator/): Generate coordinated colors from one starting color.
+- [Linux chmod builder](https://nepocore.com/tools/chmod-builder/): Turn permission choices into octal modes.
+
+## PDF tools
+
+- [PDF tools](https://nepocore.com/categories/pdf/): Collection index.
+- [Images to PDF](https://nepocore.com/tools/images-to-pdf/): Turn your images into a neat document.
+- [Merge PDFs](https://nepocore.com/tools/pdf-merge/): Bring multiple documents together.
+- [Extract PDF pages](https://nepocore.com/tools/pdf-extract/): Keep just the pages you need.
+- [Rotate PDF pages](https://nepocore.com/tools/pdf-rotate/): Turn selected pages without editing the original.
+- [Add PDF page numbers](https://nepocore.com/tools/pdf-page-numbers/): Number the pages of a PDF document.
+- [PDF to JPG / PNG](https://nepocore.com/tools/pdf-to-images/): Export selected PDF pages as images or a ZIP.
+- [PDF compressor](https://nepocore.com/tools/pdf-compressor/): Optimize a PDF or make a smaller scanned copy.
+- [PDF text extractor](https://nepocore.com/tools/pdf-to-text/): Copy embedded PDF text with page separators.
+
+## Everyday essentials
+
+- [Everyday essentials](https://nepocore.com/categories/everyday/): Collection index.
+- [Custom QR code generator](https://nepocore.com/tools/qr-code/): Styled QR codes, beautiful colors and crisp PNG or SVG exports.
+- [Random name picker](https://nepocore.com/tools/random-picker/): Let a little chance make the choice.
+- [Focus timer](https://nepocore.com/tools/pomodoro/): Make a little space for deep work.
+- [Stopwatch](https://nepocore.com/tools/stopwatch/): Start, pause and capture the moment.
+- [QR code scanner](https://nepocore.com/tools/qr-reader/): Read a QR image without opening unknown links.
+- [Random number generator](https://nepocore.com/tools/random-numbers/): Pick secure random integers in your range.
+- [Habit streak calendar](https://nepocore.com/tools/habit-tracker/): Mark completed days and export a monthly tracker.
+
+## SEO & web
+
+- [SEO & web](https://nepocore.com/categories/web/): Collection index.
+- [SEO meta tag generator](https://nepocore.com/tools/meta-tag-generator/): Prepare titles, descriptions and sharing tags.
+- [robots.txt generator](https://nepocore.com/tools/robots-generator/): Create a simple crawler rules file.
+- [XML sitemap generator](https://nepocore.com/tools/sitemap-generator/): Turn a URL list into an XML sitemap.
+
+## Health & wellness
+
+- [Health & wellness](https://nepocore.com/categories/health/): Collection index.
+- [BMR calculator](https://nepocore.com/tools/bmr/): Estimate adult resting energy using the Mifflin–St Jeor equation.
+- [TDEE calculator](https://nepocore.com/tools/tdee/): Explore adult daily energy expenditure with an editable activity multiplier.
+- [Macro calculator](https://nepocore.com/tools/macro-calculator/): Convert your calorie budget and chosen macro split into grams.
+- [Calories burned estimator](https://nepocore.com/tools/calories-burned/): Estimate activity energy from duration, body weight and a chosen MET value.
+- [Sleep duration planner](https://nepocore.com/tools/sleep-planner/): Plan bedtime from your wake time, desired sleep and time to fall asleep.
+
+## Pregnancy & periods
+
+- [Pregnancy & periods](https://nepocore.com/categories/pregnancy/): Collection index.
+- [Pregnancy due date calculator](https://nepocore.com/tools/due-date/): Estimate a due date from the first day of the last period.
+- [Pregnancy week & trimester](https://nepocore.com/tools/pregnancy-weeks/): Calculate weeks, days and trimester from an entered pregnancy reference date.
+- [Period calendar](https://nepocore.com/tools/period-calendar/): Project cycle dates from a start date and your usual cycle length.
+- [Estimated ovulation window](https://nepocore.com/tools/ovulation-window/): Explore an approximate ovulation interval from an assumed regular cycle.
+- [Contraction timer & log](https://nepocore.com/tools/contraction-timer/): Record contraction start times, duration and intervals between starts.
+
+## Parenting & family
+
+- [Parenting & family](https://nepocore.com/categories/family/): Collection index.
+- [Baby age calculator](https://nepocore.com/tools/baby-age/): Show a child’s age in calendar months, weeks and days.
+- [Feeding journal](https://nepocore.com/tools/feeding-journal/): Record feeding times, optional amounts and notes in a private session.
+- [Diaper log](https://nepocore.com/tools/diaper-log/): Keep a simple timestamped record of diaper changes and notes.
+- [Baby name shortlist](https://nepocore.com/tools/baby-names/): Browse a curated list of names and save a personal shortlist.
+- [Pregnancy announcement maker](https://nepocore.com/tools/pregnancy-announcement/): Create a downloadable announcement card using your own words and dates.
+
+## Sports & training
+
+- [Sports & training](https://nepocore.com/categories/sports/): Collection index.
+- [Running pace & splits](https://nepocore.com/tools/running-pace/): Calculate pace, speed and equal-distance race splits.
+- [Cricket required run rate](https://nepocore.com/tools/cricket-run-rate/): Calculate current and required cricket scoring rates using legal balls.
+- [Tournament bracket generator](https://nepocore.com/tools/tournament-bracket/): Create a single-elimination bracket with byes and editable match winners.
+- [Chess clock](https://nepocore.com/tools/chess-clock/): Run two player clocks with a chosen starting time and increment.
+- [Estimated one-rep max](https://nepocore.com/tools/one-rep-max/): Estimate a lifting one-repetition maximum from a submaximal set.
+- [Interval workout timer](https://nepocore.com/tools/interval-timer/): Alternate timed work and rest blocks for a chosen number of rounds.
+- [Barbell plate calculator](https://nepocore.com/tools/plate-calculator/): Find equal plates for each side of a barbell from your available inventory.
+- [Training volume tracker](https://nepocore.com/tools/training-volume/): Calculate workout load from sets, repetitions and external weight.
+- [Cycling gear calculator](https://nepocore.com/tools/cycling-gears/): Compare gear ratios, development and speed from cadence and wheel size.
+- [Swimming pace calculator](https://nepocore.com/tools/swim-pace/): Calculate swimming pace per 100 meters and pool-length splits.
+
+## Fun & photo booth
+
+- [Fun & photo booth](https://nepocore.com/categories/fun/): Collection index.
+- [Cuteness meter · just for fun](https://nepocore.com/tools/cuteness-meter/): Make a playful photo score card with a camera or uploaded image.
+- [Photo booth strips](https://nepocore.com/tools/photo-booth/): Capture or upload moments and arrange them into a photo-booth strip.
+- [Sticker outline maker](https://nepocore.com/tools/sticker-maker/): Add an outline to a transparent cutout and export a PNG sticker.
+- [Pet trading-card maker](https://nepocore.com/tools/pet-card/): Turn a pet photo into a custom collectible-style card.
+- [Couple initials poster](https://nepocore.com/tools/couple-poster/): Design a poster with initials, names and an optional anniversary date.
+
+## Career & business
+
+- [Career & business](https://nepocore.com/categories/business/): Collection index.
+- [Resume PDF builder](https://nepocore.com/tools/resume-builder/): Create a clean resume with live preview, printable PDF and editable sections.
+- [Cover letter builder](https://nepocore.com/tools/cover-letter/): Assemble an editable cover letter from your own application details.
+- [Invoice generator](https://nepocore.com/tools/invoice-builder/): Create an itemized invoice with tax, discount, currency and printable output.
+- [Freelance hourly-rate calculator](https://nepocore.com/tools/freelance-rate/): Estimate a sustainable billable rate from income, expenses and available hours.
+- [Project quotation builder](https://nepocore.com/tools/quotation-builder/): Create a client quote with line items, terms, expiry date and PDF output.
+- [Business card & vCard maker](https://nepocore.com/tools/business-card/): Create a printable card and a contact file.
+- [Inventory tracker](https://nepocore.com/tools/inventory-tracker/): Track quantities, stock value and reorder levels.
+- [Shipping label maker](https://nepocore.com/tools/shipping-label/): Print sender and recipient labels without postage.
+- [Cash-flow planner](https://nepocore.com/tools/cash-flow/): Carry opening cash through monthly forecasts.
+
+## Nepal tools
+
+- [Nepal tools](https://nepocore.com/categories/nepal/): Collection index.
+- [BS ↔ AD date converter](https://nepocore.com/tools/bs-ad-converter/): Convert supported Bikram Sambat and Gregorian calendar dates locally.
+- [Unicode ↔ Preeti converter](https://nepocore.com/tools/unicode-preeti/): Convert Nepali Unicode text and legacy Preeti-encoded text.
+- [NEB grade calculator](https://nepocore.com/tools/neb-grade/): Estimate subject grades and credit-weighted GPA under a stated NEB grading scheme.
+- [Nepali holiday calendar](https://nepocore.com/tools/nepali-holidays/): Browse a sourced Nepali holiday list with dates, scope and calendar export.
+- [Number to Nepali words](https://nepocore.com/tools/nepali-words/): Write an integer amount in Nepali words using lakh and crore grouping.
+- [NPR cash-denomination counter](https://nepocore.com/tools/npr-cash-counter/): Count Nepali notes and coins with exact totals.
+- [Printable Nepali calendar](https://nepocore.com/tools/nepali-calendar/): Make a BS month with AD dates and scoped holidays.
+- [Nepali application-letter builder](https://nepocore.com/tools/nepali-letter/): Draft editable leave and general-request letters.
+
+## Home & solar
+
+- [Home & solar](https://nepocore.com/categories/home/): Collection index.
+- [Paint quantity calculator](https://nepocore.com/tools/paint-calculator/): Estimate wall area, paint volume and can counts from room dimensions.
+- [Tile quantity calculator](https://nepocore.com/tools/tile-calculator/): Estimate tiles, boxes and material cost for an area with a waste allowance.
+- [Concrete volume calculator](https://nepocore.com/tools/concrete-volume/): Calculate concrete volume for a slab, cylinder or rectangular footing.
+- [Solar energy estimator](https://nepocore.com/tools/solar-energy/): Estimate daily and monthly output from panel capacity, sun hours and losses.
+- [Solar payback calculator](https://nepocore.com/tools/solar-payback/): Estimate simple payback from installation cost, generation and electricity value.
+- [Room floor-plan designer](https://nepocore.com/tools/room-planner/): Arrange furniture to scale in a simple 2D room.
+
+## Travel & events
+
+- [Travel & events](https://nepocore.com/categories/travel/): Collection index.
+- [Time-zone meeting planner](https://nepocore.com/tools/meeting-planner/): Compare a chosen meeting time across IANA time zones.
+- [Group trip expense settlement](https://nepocore.com/tools/trip-settlement/): Calculate who owes whom after shared trip expenses.
+- [Packing checklist](https://nepocore.com/tools/packing-checklist/): Build and check a customizable packing list for a trip.
+- [Birthday countdown](https://nepocore.com/tools/birthday-countdown/): Count down to a birthday or a chosen event and make a shareable card.
+- [Calendar invitation generator](https://nepocore.com/tools/calendar-invitation/): Create an ICS calendar file with an event title, time and location.
+- [Event seating-chart builder](https://nepocore.com/tools/seating-chart/): Assign guests to tables and export the plan.
+
+## Audio & animation
+
+- [Audio & animation](https://nepocore.com/categories/audio/): Collection index.
+- [Voice recorder](https://nepocore.com/tools/voice-recorder/): Record microphone audio locally with playback and a downloadable file.
+- [Audio trimmer](https://nepocore.com/tools/audio-trimmer/): Select a time range in a browser-readable audio file and export WAV.
+- [Audio to WAV converter](https://nepocore.com/tools/audio-wav/): Decode supported audio and export an uncompressed PCM WAV file.
+- [GIF maker](https://nepocore.com/tools/gif-maker/): Create an animated GIF from uploaded image frames with adjustable timing.
+- [Subtitle timing shifter](https://nepocore.com/tools/subtitle-shift/): Move SRT or VTT caption timestamps earlier or later by an offset.
+
+## Food & cooking
+
+- [Food & cooking](https://nepocore.com/categories/food/): Collection index.
+- [Recipe portion scaler](https://nepocore.com/tools/recipe-scaler/): Scale ingredient amounts from an original yield to a target yield.
+- [Ingredient cost calculator](https://nepocore.com/tools/ingredient-cost/): Calculate ingredient cost from pack size, pack price and recipe usage.
+- [Cost per serving calculator](https://nepocore.com/tools/serving-cost/): Combine batch ingredients, packaging and overhead into a per-serving cost.
+- [Coffee brewing ratio](https://nepocore.com/tools/coffee-ratio/): Calculate coffee or water amounts from your chosen brewing ratio.
+- [Oven temperature converter](https://nepocore.com/tools/oven-converter/): Convert Celsius and Fahrenheit and apply an optional fan-oven adjustment.
+- [Pantry inventory tracker](https://nepocore.com/tools/pantry-tracker/): Track quantities, storage locations and label dates.
+
+## Science & electronics
+
+- [Science & electronics](https://nepocore.com/categories/science/): Collection index.
+- [Ohm’s law calculator](https://nepocore.com/tools/ohms-law/): Find voltage, current, resistance and power for a simple DC resistive load.
+- [Resistor colour decoder](https://nepocore.com/tools/resistor-colors/): Decode four- or five-band resistor values and tolerance.
+- [LED resistor calculator](https://nepocore.com/tools/led-resistor/): Estimate a series resistor and dissipation from supply voltage, LED drop and current.
+- [Kinetic energy calculator](https://nepocore.com/tools/kinetic-energy/): Calculate classical kinetic energy, mass or speed from two known values.
+- [Projectile motion simulator](https://nepocore.com/tools/projectile-motion/): Explore ideal projectile trajectories with a launch speed, angle and height.
+
+## Games & practice
+
+- [Games & practice](https://nepocore.com/categories/gaming/): Collection index.
+- [eDPI calculator](https://nepocore.com/tools/edpi/): Calculate effective mouse sensitivity from DPI and in-game sensitivity.
+- [Mouse sensitivity converter](https://nepocore.com/tools/sensitivity-converter/): Convert sensitivity between a small set of documented yaw-based game profiles.
+- [Reaction-time game](https://nepocore.com/tools/reaction-test/): Measure the delay between a visual cue and your click or tap.
+- [Aim trainer](https://nepocore.com/tools/aim-trainer/): Practice clicking or tapping targets and review accuracy in a timed round.
+- [Memory matching challenge](https://nepocore.com/tools/memory-game/): Match pairs of symbols in a timed card game with adjustable difficulty.
+
+## Security & privacy
+
+- [Security & privacy](https://nepocore.com/categories/security/): Collection index.
+- [Passphrase generator](https://nepocore.com/tools/passphrase/): Generate a random multiword passphrase using a bundled word list.
+- [File checksum verifier](https://nepocore.com/tools/file-checksum/): Hash a local file and compare it with an expected SHA-256 digest.
+- [Content Security Policy builder](https://nepocore.com/tools/csp-builder/): Compose a CSP header from explicit resource-source choices.
+- [PEM certificate viewer](https://nepocore.com/tools/certificate-viewer/): Inspect a public X.509 certificate’s names, dates, key details and fingerprint.
+- [URL structure inspector](https://nepocore.com/tools/url-inspector/): Inspect URL components, hostname encoding and visible structural warning signs.
+- [CIDR / subnet calculator](https://nepocore.com/tools/subnet-calculator/): Calculate IPv4 network ranges and host counts.
+- [HMAC generator / verifier](https://nepocore.com/tools/hmac-generator/): Authenticate sample messages with a shared key.
+- [HAR network-log viewer](https://nepocore.com/tools/har-viewer/): Inspect timings and export a sanitized HAR copy.
+
+## Education & worksheets
+
+- [Education & worksheets](https://nepocore.com/categories/education/): Collection index.
+- [Word-search generator](https://nepocore.com/tools/word-search/): Make a printable puzzle and answer key.
+- [Crossword builder](https://nepocore.com/tools/crossword/): Turn words and clues into a connected puzzle.
+- [Sudoku generator & checker](https://nepocore.com/tools/sudoku/): Generate uniquely solvable puzzles and check answers.
+- [School timetable maker](https://nepocore.com/tools/school-timetable/): Build a weekly class schedule and printable PDF.
+- [Kids’ printable worksheets](https://nepocore.com/tools/kids-worksheets/): Create alphabet, math, handwriting and coloring sheets. Print or download.
+
+## Money & shopping
+
+- [Money & shopping](https://nepocore.com/categories/money/): Collection index.
+- [Monthly budget planner](https://nepocore.com/tools/budget-planner/): Compare income, planned spending and actual costs.
+- [Subscription cost tracker](https://nepocore.com/tools/subscription-tracker/): See recurring bills as monthly and yearly totals.
+- [Debt payoff planner](https://nepocore.com/tools/debt-payoff/): Compare snowball and highest-rate payment plans.
+- [Price-per-unit comparison](https://nepocore.com/tools/unit-price/): Compare packs, discounts and measurement units.
+
+## Practical guides
+
+- [JPEG, PNG or WebP: choose a format for the job](https://nepocore.com/blog/jpeg-png-webp-choose-image-format/): A practical decision guide for photographs, transparent logos and screenshots, with a repeatable export comparison.
+- [Compress images while keeping the detail people need](https://nepocore.com/blog/compress-images-without-losing-important-detail/): Use dimensions, quality and visual comparisons in the right order instead of chasing an arbitrary file-size target.
+- [Prepare a passport photo layout without confusing size with approval](https://nepocore.com/blog/passport-photo-size-print-layout/): Understand millimetres, pixel dimensions and print scaling before making a photo sheet.
+- [Turn a photo into a readable pixel-art avatar](https://nepocore.com/blog/photo-to-pixel-art-clean-avatar/): Choose a crop, grid size and color treatment that keep the subject recognizable at small sizes.
+- [Make a photo comic strip that reads in the right order](https://nepocore.com/blog/make-photo-comic-strip-readable/): Plan panels, captions and bubbles so the story remains clear on a phone and in a downloaded image.
+- [Create a transparent signature image and use it carefully](https://nepocore.com/blog/draw-signature-transparent-png/): Draw a clean signature, inspect transparency and understand how it differs from a cryptographic digital signature.
+- [Design a bold text poster with layered depth](https://nepocore.com/blog/layered-3d-text-poster-design/): Use short text, controlled extrusion and readable color contrast to make a useful PNG or SVG poster.
+- [Make a QR code that still scans after printing](https://nepocore.com/blog/print-qr-code-quiet-zone-test/): Keep the quiet zone, choose a clear destination and test the actual printed result before distributing it.
+- [Export PDF pages as JPG or PNG without losing track of resolution](https://nepocore.com/blog/export-pdf-pages-jpg-png/): Choose page ranges and pixel density, then decide between a single image and a ZIP of page images.
+- [PDF compression: compare a structure rewrite with an image-based copy](https://nepocore.com/blog/compress-pdf-structure-or-image-copy/): Understand why a PDF can get larger, and which features an image-based export removes.
+- [Extract PDF text or use OCR? Start by checking the text layer](https://nepocore.com/blog/extract-pdf-text-versus-ocr/): Avoid empty extraction results and understand why columns, scans and reading order need different treatment.
+- [Build a word search from a list that actually fits](https://nepocore.com/blog/word-search-custom-list-answer-key/): Choose a grid, useful vocabulary and an answer key, while handling words the generator cannot place.
+- [Create a connected crossword with clear clues](https://nepocore.com/blog/crossword-words-clues-connected-layout/): Write fair answer–clue pairs, improve intersections and review unplaced words before handing out the puzzle.
+- [Use a Sudoku generator, checker and hint without guessing what they mean](https://nepocore.com/blog/sudoku-unique-solution-checker/): Learn the difference between conflicts, wrong entries, uniqueness and clue-count difficulty.
+- [Make a weekly school timetable that matches the real day](https://nepocore.com/blog/school-timetable-weekly-printable/): Build periods and breaks first, then place subjects and check the printable schedule against actual school hours.
+- [Choose a printable worksheet with one clear practice goal](https://nepocore.com/blog/print-kids-worksheets-purposeful-practice/): Use alphabet, math, handwriting or coloring pages deliberately and check the exported PDF before printing.
+- [Use a habit calendar without letting a streak become the whole goal](https://nepocore.com/blog/habit-calendar-streaks-local-records/): Record a few clear actions, interpret streaks accurately and keep a backup of optional local records.
+- [Make a simple room plan before moving furniture](https://nepocore.com/blog/room-floor-plan-furniture-clearance/): Measure rectangular footprints, compare positions and understand the difference between no overlap and usable clearance.
+- [Build a seating chart with capacities you can verify](https://nepocore.com/blog/seating-chart-capacity-manual-shuffle/): Keep guest labels unique, reserve explicit assignments and use fill or shuffle only for the decisions you intend.
+- [Keep a pantry list without treating dates as a food-safety verdict](https://nepocore.com/blog/pantry-list-package-dates-inventory/): Record quantities, storage locations and package-label dates while keeping calendar comparisons separate from safety decisions.
+- [Build a monthly budget with planned and actual amounts](https://nepocore.com/blog/monthly-budget-planned-actual/): Separate the plan from the record, check the leftover arithmetic and keep all rows in one currency.
+- [Work out an IPv4 subnet from 192.0.2.143/27](https://nepocore.com/blog/ipv4-cidr-subnet-worked-example/): Follow the block arithmetic, then handle /31 and /32 using their explicitly different interpretations.
+- [Read chmod numbers without defaulting to 777](https://nepocore.com/blog/chmod-numeric-permissions-explained/): Build owner, group and other permissions from 4–2–1, and interpret directory search and special bits carefully.
+- [Generate and verify an HMAC with the right bytes](https://nepocore.com/blog/hmac-shared-key-message-authentication/): Distinguish authentication from encryption and compare UTF-8 keys, hexadecimal bytes and exact message content.
+- [Inspect a HAR network log without sharing its secrets](https://nepocore.com/blog/inspect-har-network-log-safely/): Read timing and size summaries, then understand what a reduced export removes and what it can still reveal.
+- [Compare subscription costs on the same time scale](https://nepocore.com/blog/subscription-cost-monthly-yearly/): Normalize weekly, monthly and annual prices without confusing an average cost with the actual billing date.
+- [Compare debt-payoff methods under clear assumptions](https://nepocore.com/blog/debt-payoff-snowball-avalanche-model/): See how monthly interest, fixed payments and priority rules shape a simplified snowball or avalanche schedule.
+- [Compare pack sizes using unit price and the same units](https://nepocore.com/blog/unit-price-compare-pack-sizes-discounts/): Convert grams, kilograms, millilitres and litres before comparing a discount with a larger pack.
+- [Follow cash from opening balance to the next period](https://nepocore.com/blog/cash-flow-opening-closing-balance/): Model receipts and payments in order without confusing cash flow with profit or a balanced monthly budget.
+- [Keep a manual inventory with stock value and reorder flags](https://nepocore.com/blog/manual-inventory-stock-value-reorder/): Use unique SKUs, a defined unit cost and a real count before relying on stock totals.
+- [Make a business card with a contact QR people can verify](https://nepocore.com/blog/business-card-vcard-qr-print/): Keep the visual card readable, distinguish a vCard from a website link and test both the printed and digital contact.
+- [Print a clear address label and keep postage separate](https://nepocore.com/blog/shipping-address-label-no-postage/): Choose a physical label size, preserve every address line and verify the recipient before attaching it to a parcel.
+- [Count Nepali notes and coins with a denomination check](https://nepocore.com/blog/count-nepali-cash-notes-coins/): Separate note and coin rows, verify the piece count and reconcile a worked NPR total.
+- [Read a Nepali BS calendar with AD dates and scoped holiday notes](https://nepocore.com/blog/nepali-bs-calendar-ad-dates-holidays/): Use the supported date range, check a known conversion and distinguish a dated holiday from a universal closure.
+- [Draft a Nepali request letter, then make it your own](https://nepocore.com/blog/write-edit-nepali-request-letter/): Choose an editable school, office or general request template and check dates, wording and the final PDF.
+
+## Worksheet resources
+
+- [Weekly practice packs](https://nepocore.com/worksheets/weekly-practice-pack/): Five-day practice sheet packs.
+- [Spelling sheets](https://nepocore.com/worksheets/spelling-worksheet-maker/): Practice sheets made from a visitor-supplied spelling list.
+- [Word searches](https://nepocore.com/worksheets/word-search-generator/): Printable puzzles from a visitor-supplied word list.
+- [Handwriting sheets](https://nepocore.com/worksheets/handwriting-practice-maker/): Writing and tracing practice.
+- [Weekly practice guide](https://nepocore.com/worksheets/guides/build-a-week-of-math-practice/): Plan a manageable practice week.
+- [Spelling practice guide](https://nepocore.com/worksheets/guides/spelling-with-your-own-words/): Use a personal spelling list effectively.
+- [Printing guide](https://nepocore.com/worksheets/guides/print-worksheets-a4-letter/): Print cleanly on A4 or US Letter.
+
+## Policies and site resources
+
+- [About](https://nepocore.com/about/): Project background.
+- [Privacy](https://nepocore.com/privacy/): Local processing, browser storage and service exceptions.
+- [Terms](https://nepocore.com/terms/): Terms of use.
+- [Editorial policy](https://nepocore.com/editorial-policy/): Content preparation and corrections.
+- [Accessibility](https://nepocore.com/accessibility/): Accessibility information.
+- [Contact](https://nepocore.com/contact/): Contact and feedback.
+- [Robots instructions](https://nepocore.com/robots.txt): Crawler access instructions.
+- [XML sitemap](https://nepocore.com/sitemap.xml): Canonical indexable page URLs.
+- [RSS feed](https://nepocore.com/blog/feed.xml): Guide updates.
