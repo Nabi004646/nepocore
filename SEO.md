@@ -10,7 +10,7 @@ The site is built as crawlable static HTML. These settings apply to the public p
 | Meta titles | Every generated page has a non-empty, unique title. Client navigation updates titles. |
 | Meta descriptions | Every indexable page has a unique description, including the nine guide categories and the guide archive. |
 | Image alt text | Generated HTML is checked for alt attributes and dimensions on every image. The current static layout uses CSS/SVG artwork rather than raster image elements; uploaded image previews already use descriptive alt text. Decorative art is hidden from assistive technology. |
-| Core Web Vitals | Local fonts use font-display:swap and preloads; the main heading is not delayed by entrance animation; tool engines remain lazy-loaded; cards reserve layout space. Measure real LCP, INP and CLS separately. |
+| Core Web Vitals | Local fonts use font-display:swap and preloads; the main heading is not delayed by entrance animation; tool engines remain lazy-loaded; cards reserve layout space; content-based versions on entry assets refresh styles and scripts after deployments. Measure real LCP, INP and CLS separately. |
 | sitemap.xml | Includes all 319 indexable pages, including Worksheet Studio pages, and excludes favorites/error pages. |
 | og:image | Absolute HTTPS WebP sharing images with MIME type, dimensions and descriptive alt metadata. Twitter image/title/description/alt metadata is also included. |
 | Broken links | Local links, fragments and assets are checked on every production build. Four worksheet hash values are deliberate tool-state selectors. External third-party URL availability is not inferred from an offline audit. |

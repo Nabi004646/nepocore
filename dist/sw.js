@@ -1,4 +1,4 @@
-const CACHE='nepocore-seo-v15';
+const CACHE='nepocore-seo-v16';
 const CORE=['./','./styles.css','./design.css','./design.mjs','./app.mjs','./ui.mjs','./core.mjs','./scientific-core.mjs','./form-behavior.mjs','./catalog.mjs','./fresh-data.mjs','./pro-data.mjs','./blog.mjs','./blog-index.mjs','./blog-content/sources.mjs','./views.mjs','./content.mjs','./info.mjs','./expansion-data.mjs','./collections-data.mjs','./collection-sources.mjs','./favicon.ico','./assets/favicon-96.png','./assets/icon-192.png','./manifest.webmanifest','./assets/fonts/manrope-latin.woff2','./assets/fonts/dm-sans-latin.woff2'];
 self.addEventListener('install',ev=>{ev.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)));self.skipWaiting();});
 self.addEventListener('activate',ev=>{ev.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('nepocore-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));});
