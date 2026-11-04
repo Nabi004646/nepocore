@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nepocore.com/sitemap.xml

@@ -1,0 +1,10 @@
+node_modules/
+.sites-output/
+.openai/
+.env
+.env.*
+!.env.example
+*.tar.gz
+*.tgz
+__pycache__/
+Nepocore_Static_Website.zip

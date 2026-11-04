@@ -1,0 +1,8 @@
+EFF Short Wordlist #1
+Creator: Joseph Bonneau for the Electronic Frontier Foundation.
+Original file: https://www.eff.org/files/2016/09/08/eff_short_wordlist_1.txt
+Background and use: https://www.eff.org/dice
+License: Creative Commons Attribution 4.0 International (CC BY 4.0), under EFF's current copyright policy at https://www.eff.org/copyright unless otherwise noted. The original text file has no separate license notice.
+License URI: https://creativecommons.org/licenses/by/4.0/
+Modification: Original 1296 words and order preserved; four-dice reference codes removed, reformatted as JSON and JavaScript arrays.
+No EFF endorsement of this application is implied.

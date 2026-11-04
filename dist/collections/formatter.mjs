@@ -1,0 +1,11 @@
+import {result,e,download} from '../ui.mjs';
+import {formatText,textStats} from './fresh-core.mjs';
+export function setupFormatter(tool,mount,out){
+ mount.innerHTML=`<h2>A little less untidy.</h2><label class="field"><span>Your text</span><textarea data-text maxlength="100000" spellcheck="false" placeholder="Paste or type your text here…">Small steps.  Big possibilities.\nMake a little space for your next idea.</textarea></label><div class="format-actions" aria-label="Text formatting actions">${[['upper','UPPERCASE'],['lower','lowercase'],['title','Title Case'],['sentence','Sentence case'],['clean','Clean spacing'],['remove','Remove all whitespace'],['trim','Trim edges']].map(([id,name])=>`<button type="button" class="btn secondary small" data-format="${id}">${name}</button>`).join('')}</div><div class="form-actions"><button type="button" class="btn secondary" data-undo disabled>Undo</button><button type="button" class="btn secondary" data-clear>Clear text</button></div><p class="form-note">Up to 100,000 characters. Changes stay in this tab. “Remove all whitespace” also removes line breaks.</p>`;
+ const input=mount.querySelector('textarea'),undo=mount.querySelector('[data-undo]'),history=[];let timer;
+ function render(){const s=textStats(input.value);result(out,{label:'Word count',value:s.words,details:[['Visible characters',s.characters],['Characters without whitespace',s.withoutSpaces],['Lines',s.lines]],html:`<pre class="result-output">${e(input.value||'Your formatted text appears here.')}</pre>`,copy:input.value});const b=document.createElement('button');b.className='btn secondary small';b.textContent='Download TXT';b.onclick=()=>download(new Blob([input.value],{type:'text/plain;charset=utf-8'}),'nepocore-formatted-text.txt');out.querySelector('.result-actions').append(b);undo.disabled=!history.length;}
+ function remember(){history.push(input.value);if(history.length>20)history.shift();}
+ input.oninput=()=>{clearTimeout(timer);timer=setTimeout(render,90);};
+ mount.querySelectorAll('[data-format]').forEach(b=>b.onclick=()=>{remember();input.value=formatText(input.value,b.dataset.format);render();});
+ undo.onclick=()=>{if(history.length)input.value=history.pop();render();};mount.querySelector('[data-clear]').onclick=()=>{remember();input.value='';render();input.focus();};render();return()=>clearTimeout(timer);
+}
