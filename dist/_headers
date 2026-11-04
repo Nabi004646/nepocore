@@ -1,3 +1,5 @@
+/site-*.css
+  Cache-Control: public, max-age=31536000, immutable
 /styles.css
   Cache-Control: public, max-age=0, must-revalidate
 /design.css

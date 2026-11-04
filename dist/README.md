@@ -258,3 +258,13 @@ Every generated page has a distinct 1200×630 PNG Open Graph card, Twitter large
 After adding pages or changing titles/descriptions, run `npm run refresh:social` in a development environment with Python Pillow and DejaVu fonts (`/usr/share/fonts/truetype/dejavu`), then `npm test`. The script rebuilds metadata, renders cards, updates `dist/social-images.mjs`, and runs the regular build/audit. Commit the generated PNGs and manifest. Cloudflare builds use the committed images and require no Pillow installation.
 
 Reference standards: https://ogp.me/ and https://developers.google.com/search/docs/fundamentals/ai-optimization-guide .
+
+## Mobile startup performance
+
+The shared shell keeps its pre-rendered HTML on first load. The browser uses `catalog-client.mjs` for public tool data and delays editorial content, social image manifests and client page templates until an interaction needs them. `catalog-view.mjs` shares filtering/cards between the static build and live controls.
+
+The build combines the two source stylesheets into one content-addressed `site-<hash>.css` with an immutable cache policy. Keep editing `styles.css` and `design.css`; the build regenerates the shared sheet, browser catalogue and small offline-shell manifest. The first-screen text paints without entrance fades; decorative floating motion and below-fold reveals remain.
+
+Performance checks cap the initial module graph at 9 modules and 105 KB before compression. The November 4 optimization reduced it from 21 modules / 364,970 bytes to 8 modules / 93,289 bytes. These are source-byte budgets, not measured transfer sizes or promises of a Lighthouse score. The supplied mobile report scored 97, with LCP 1.6 s, TBT 30 ms, CLS 0 and Speed Index 4.1 s.
+
+Cloudflare Web Analytics injects a third-party beacon outside this repository. Its own cache lifetime and compatibility code can remain in PageSpeed warnings; the application does not disable analytics or control that script.

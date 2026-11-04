@@ -1,6 +1,6 @@
 import {configureToolInputs,markResultStale} from './form-behavior.mjs';
 import {escapeHTML as e,formatNumber as n} from './core.mjs';
-import {icon} from './catalog.mjs';
+import {icon} from './icons.mjs';
 export {e,n};
 export const number=(id,label,value,min,max,step='any')=>({id,label,type:'number',value,min,max,step});
 export const select=(id,label,options,value)=>({id,label,type:'select',options,value});

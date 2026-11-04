@@ -73,3 +73,6 @@ body.neo-design.dark{--bg:#20221d;--panel:#292c24;--ink:#f5f2e9;--muted:#bcbdad;
 /* A concise answer beside the full, sourced explanation. */
 .quick-answer{padding:clamp(20px,4vw,32px);margin:0 0 32px;border:1px solid var(--line);border-left:4px solid #f1663c;border-radius:12px;background:color-mix(in srgb,currentColor 3%,transparent)}
 .quick-answer h2{margin-top:12px}.quick-answer p{font-size:1.05em;line-height:1.8}.quick-answer a,.text-version a{font-size:.85rem;text-underline-offset:4px}.article-toc .blog-read{display:block;margin-top:14px}
+
+/* First-screen content paints immediately; decorative floating and scroll reveals remain. */
+.neo-design .hero-edition,.neo-design .art-stamp,.neo-design .atelier-intro>p,.neo-design .atelier-search,.neo-design .atelier-suggestions{animation:none}
