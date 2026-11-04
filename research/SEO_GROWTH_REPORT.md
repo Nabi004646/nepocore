@@ -49,7 +49,7 @@ No external account was created, paid placement purchased, community post publis
 - The six PDF pages were rendered and inspected; question/answer pagination and A4 dimensions were checked.
 - The existing startup JavaScript budget continues to pass. Research and expanded editorial content do not join the initial module graph.
 
-Public HTTP deployment checks are recorded after Cloudflare publishes the commit. Browser-based review is not assumed from an offline audit, and lab SEO scores are not presented as search rankings.
+Public HTTP checks passed on all 13 selected live resources after Cloudflare published commit `240071d`. The sitemap served 323 URLs, new pages returned the intended headings, and the PDF canonical header pointed to the resource page. See [deployment-verification.json](deployment-verification.json). Browser-based review is not assumed from an offline audit, and lab SEO scores are not presented as search rankings.
 
 ## Next measurement cycle
 
