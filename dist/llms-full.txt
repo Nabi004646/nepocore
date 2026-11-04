@@ -2,12 +2,13 @@
 
 > Canonical links and descriptions for the public tool catalogue and practical guides. This is a directory, not the full text of every page.
 
-Nepocore is a free collection of 227 browser-based tools and 35 practical guides. Interactive tools require JavaScript; the guides and tool instructions are available in static HTML. Most tools process input on the visitor's device. Some optional engines download models or libraries from third-party services, and online system voices may use their provider. The privacy policy describes these exceptions. Health, financial and study outputs have tool-specific assumptions and limits.
+Nepocore is a free collection of 227 browser-based tools and 38 practical guides. Interactive tools require JavaScript; the guides and tool instructions are available in static HTML. Most tools process input on the visitor's device. Some optional engines download models or libraries from third-party services, and online system voices may use their provider. The privacy policy describes these exceptions. Health, financial and study outputs have tool-specific assumptions and limits.
 
 ## Main resources
 
 - [Home](https://nepocore.com/): Overview and tool discovery.
 - [All tools](https://nepocore.com/tools/): Searchable catalogue of all free tools.
+- [Teaching resource pack](https://nepocore.com/resources/): Original printable arithmetic sheets, separate answer keys and an accessible text version.
 - [Practical guides](https://nepocore.com/blog/): Original walkthroughs, worked examples and source references.
 - [Worksheet Studio](https://nepocore.com/worksheets/): Printable worksheet generators with browser previews and downloads.
 - [Worksheet guides](https://nepocore.com/worksheets/guides/): Practical instructions for planning and printing practice sheets.
@@ -376,6 +377,9 @@ Nepocore is a free collection of 227 browser-based tools and 35 practical guides
 - [Count Nepali notes and coins with a denomination check](https://nepocore.com/blog/count-nepali-cash-notes-coins/): Separate note and coin rows, verify the piece count and reconcile a worked NPR total.
 - [Read a Nepali BS calendar with AD dates and scoped holiday notes](https://nepocore.com/blog/nepali-bs-calendar-ad-dates-holidays/): Use the supported date range, check a known conversion and distinguish a dated holiday from a universal closure.
 - [Draft a Nepali request letter, then make it your own](https://nepocore.com/blog/write-edit-nepali-request-letter/): Choose an editable school, office or general request template and check dates, wording and the final PDF.
+- [Use a scientific calculator in degrees: sin, powers, logs and factorials](https://nepocore.com/blog/scientific-calculator-degrees-sin-log-factorial/): Check degree mode, reproduce worked calculations and understand errors before relying on a scientific calculator result.
+- [Calculate your IELTS overall band: averaging and rounding examples](https://nepocore.com/blog/ielts-overall-band-rounding-worked-examples/): Work through four section scores, .25 and .75 boundaries, and the difference between an overall band and a recipient’s requirements.
+- [Create a chibi anime avatar with transparent PNG and editable SVG](https://nepocore.com/blog/create-chibi-anime-avatar-transparent-png-svg/): Choose illustrated parts, build a readable avatar and check transparent PNG or SVG exports without confusing the builder with a photo-to-anime service.
 
 ## Worksheet resources
 
@@ -665,3 +669,6 @@ These Markdown companions contain the same public instructions or guide content 
 - [Count Nepali notes and coins with a denomination check](https://nepocore.com/blog/count-nepali-cash-notes-coins/index.md): Separate note and coin rows, verify the piece count and reconcile a worked NPR total.
 - [Read a Nepali BS calendar with AD dates and scoped holiday notes](https://nepocore.com/blog/nepali-bs-calendar-ad-dates-holidays/index.md): Use the supported date range, check a known conversion and distinguish a dated holiday from a universal closure.
 - [Draft a Nepali request letter, then make it your own](https://nepocore.com/blog/write-edit-nepali-request-letter/index.md): Choose an editable school, office or general request template and check dates, wording and the final PDF.
+- [Use a scientific calculator in degrees: sin, powers, logs and factorials](https://nepocore.com/blog/scientific-calculator-degrees-sin-log-factorial/index.md): Check degree mode, reproduce worked calculations and understand errors before relying on a scientific calculator result.
+- [Calculate your IELTS overall band: averaging and rounding examples](https://nepocore.com/blog/ielts-overall-band-rounding-worked-examples/index.md): Work through four section scores, .25 and .75 boundaries, and the difference between an overall band and a recipient’s requirements.
+- [Create a chibi anime avatar with transparent PNG and editable SVG](https://nepocore.com/blog/create-chibi-anime-avatar-transparent-png-svg/index.md): Choose illustrated parts, build a readable avatar and check transparent PNG or SVG exports without confusing the builder with a photo-to-anime service.

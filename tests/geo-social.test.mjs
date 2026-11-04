@@ -11,7 +11,8 @@ import {escapeHTML} from '../dist/core.mjs';
 const read=(path,binary=false)=>readFile(new URL('../dist/'+path,import.meta.url),binary?undefined:'utf8');
 const base='https://nepocore.com/';
 test('Every built page has its own matching PNG social preview, with identical OG and Twitter images',async()=>{
- assert.equal(Object.keys(socialImages).length,321);
+ const cfg=JSON.parse(await read('site-config.json'));
+ assert.equal(Object.keys(socialImages).length,cfg.static_pages+cfg.worksheet_studio_pages);
  const files=new Set();
  for(const [path,entry]of Object.entries(socialImages)){
   const html=await read(path==='/notfound/'?'404.html':path.slice(1)+'index.html');
@@ -28,7 +29,7 @@ test('Every built page has its own matching PNG social preview, with identical O
   assert.equal(png.readUInt32BE(16),1200);assert.equal(png.readUInt32BE(20),630);
   files.add(entry.file);
  }
- assert.equal(files.size,321,'Cards must be specific to every page');
+ assert.equal(files.size,Object.keys(socialImages).length,'Cards must be specific to every page');
 });
 test('Guide quick answers, references and dates agree between static HTML, schema and Markdown',async()=>{
  assert.equal(Object.keys(guideAnswers).length,posts.length);

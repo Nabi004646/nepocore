@@ -1,4 +1,10 @@
 export const sources={
+ieltsScoring:['IELTS: official overall band scoring rule','https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail'],
+mathSin:['MDN: Math.sin uses radians','https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sin'],
+svgGuide:['MDN: scalable vector graphics','https://developer.mozilla.org/en-US/docs/Web/SVG'],
+calculatorSource:['Nepocore: scientific calculator implementation','https://github.com/Nabi004646/nepocore/blob/main/dist/scientific-core.mjs'],
+builderSource:['Nepocore: illustrated character builder implementation','https://github.com/Nabi004646/nepocore/blob/main/dist/collections/anime.mjs'],
+
 formats:['MDN: image file formats','https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Image_types'],
 canvas:['MDN: canvas toBlob and resolution metadata','https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toBlob'],
 printing:['MDN: printing web content','https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries/Printing'],

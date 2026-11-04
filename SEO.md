@@ -97,3 +97,7 @@ On November 4, 2026, all 46 unique external references linked by generated HTML 
 - `/manifest.webmanifest`: installable app metadata; this is not a search ranking file.
 
 The LLM files are generated from the current catalogue on every build and advertised using a `Link` response header with `rel="describedby"`. Common singular spellings `/robot.txt` and `/llm.txt` redirect to their canonical resource names. The llms.txt format is an optional discovery proposal, not a replacement for robots.txt or sitemap.xml and not a promise of Google rankings or AI citations. Specification: https://llmstxt.org/ .
+
+## Search growth work completed 5 November 2026
+
+See [the execution report](research/SEO_GROWTH_REPORT.md), [all-tool keyword map](research/keyword-map.csv), [search evidence](research/search-evidence.json), and [prepared backlink opportunities](research/BACKLINK_OPPORTUNITIES.md). These records distinguish shipped changes, unmeasured keyword candidates and external placements that have not been submitted or earned.

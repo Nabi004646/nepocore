@@ -7,6 +7,7 @@ from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlsplit
 import hashlib
+import io
 import json
 from PIL import Image, ImageDraw, ImageFont
 
@@ -51,6 +52,12 @@ for page in sorted(DIST.rglob('*.html')):
     title = head.title.strip(); description = head.meta['description']
     digest = hashlib.sha256(('nepocore-og-v1\n' + title + '\n' + description).encode()).hexdigest()[:16]
     filename = digest + '.png'; files.add(filename)
+    manifest[key]={'file':'assets/social/'+filename,'title':title,'description':description}
+    existing=out/filename
+    if existing.is_file():
+        data=existing.read_bytes()
+        if data[:8]==b'\x89PNG\r\n\x1a\n' and len(data)>32 and int.from_bytes(data[16:20],'big')==1200 and int.from_bytes(data[20:24],'big')==630:
+            continue
     image = Image.new('RGB', (1200, 630), '#181b18'); d = ImageDraw.Draw(image)
     # Flat shapes keep the preview legible even when displayed as a small thumbnail.
     d.rounded_rectangle((24,24,1176,606),24,outline='#40473c',width=2)
@@ -81,7 +88,8 @@ for page in sorted(DIST.rglob('*.html')):
     d.line((70,541,1130,541),fill='#40473c',width=2)
     d.text((70,565),'nepocore.com',font=font(19,True),fill='#d9ef8b')
     d.text((856,565),'Less friction. More flow.',font=font(18),fill='#f5f0df')
-    image.save(out/filename,optimize=True)
+    buffer=io.BytesIO();image.save(buffer,format='PNG',optimize=True)
+    temporary=out/(filename+'.tmp');temporary.write_bytes(buffer.getvalue());temporary.replace(out/filename)
     manifest[key]={'file':'assets/social/'+filename,'title':title,'description':description}
 for previous in out.glob('*.png'):
     if previous.name not in files: previous.unlink()

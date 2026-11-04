@@ -1,15 +1,15 @@
 {
-  "pages_checked": 321,
-  "indexable_pages": 319,
-  "sitemap_urls": 319,
-  "internal_links_checked": 20145,
-  "local_asset_references_checked": 2854,
+  "pages_checked": 325,
+  "indexable_pages": 323,
+  "sitemap_urls": 323,
+  "internal_links_checked": 20798,
+  "local_asset_references_checked": 2890,
   "static_images_checked": 0,
-  "indexable_pages_reachable_from_home": 319,
+  "indexable_pages_reachable_from_home": 323,
   "intentional_noindex_pages": [
     "404.html",
     "favorites/index.html"
   ],
-  "external_urls_not_network_checked": 46,
+  "external_urls_not_network_checked": 51,
   "issues": []
 }

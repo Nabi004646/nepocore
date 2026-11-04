@@ -12,7 +12,7 @@ for file in dist.glob("qa-*.html"):
     file.unlink()
 
 def add_project(archive, include_source_zip=False):
-    for folder in ["dist", "src", "scripts", "tests"]:
+    for folder in ["dist", "src", "scripts", "tests", "research"]:
         for file in sorted((root / folder).rglob("*")):
             if not file.is_file() or "__pycache__" in file.parts:
                 continue

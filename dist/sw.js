@@ -1,4 +1,4 @@
-const CACHE='nepocore-performance-v17-b64a1ba97f1a';
+const CACHE='nepocore-performance-v17-66f1bb542799';
 const core=()=>fetch(new URL('./precache.json',self.location),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Offline manifest unavailable');return r.json();});
 self.addEventListener('install',ev=>{ev.waitUntil(Promise.all([caches.open(CACHE),core()]).then(([cache,files])=>cache.addAll(files)));self.skipWaiting();});
 self.addEventListener('activate',ev=>{ev.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('nepocore-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));});

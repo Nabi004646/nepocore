@@ -2,12 +2,13 @@
 
 > Free browser tools for everyday work, study and creativity.
 
-Nepocore is a free collection of 227 browser-based tools and 35 practical guides. Interactive tools require JavaScript; the guides and tool instructions are available in static HTML. Most tools process input on the visitor's device. Some optional engines download models or libraries from third-party services, and online system voices may use their provider. The privacy policy describes these exceptions. Health, financial and study outputs have tool-specific assumptions and limits.
+Nepocore is a free collection of 227 browser-based tools and 38 practical guides. Interactive tools require JavaScript; the guides and tool instructions are available in static HTML. Most tools process input on the visitor's device. Some optional engines download models or libraries from third-party services, and online system voices may use their provider. The privacy policy describes these exceptions. Health, financial and study outputs have tool-specific assumptions and limits.
 
 ## Start here
 
 - [Home](https://nepocore.com/): Overview and tool discovery.
 - [All tools](https://nepocore.com/tools/): Searchable catalogue of all free tools.
+- [Teaching resource pack](https://nepocore.com/resources/): Original printable arithmetic sheets, separate answer keys and an accessible text version.
 - [Practical guides](https://nepocore.com/blog/): Original walkthroughs, worked examples and source references.
 - [Worksheet Studio](https://nepocore.com/worksheets/): Printable worksheet generators with browser previews and downloads.
 - [Worksheet guides](https://nepocore.com/worksheets/guides/): Practical instructions for planning and printing practice sheets.

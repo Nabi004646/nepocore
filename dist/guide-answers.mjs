@@ -1,5 +1,9 @@
 // Concise answers supported by the methods and examples in each guide.
 export const guideAnswers={
+ 'scientific-calculator-degrees-sin-log-factorial':'Use DEG inputs for trigonometry: sin(30) = 0.5. Group expressions with parentheses, use explicit multiplication and check the displayed expression. tan(90) is undefined; errors can identify a domain or input problem.',
+ 'ielts-overall-band-rounding-worked-examples':'Add the four section bands, divide by four and round to the nearest whole or half band. An average of 7.25 becomes 7.5; 7.75 becomes 8.0. Check section minimums and test requirements separately with the recipient.',
+ 'create-chibi-anime-avatar-transparent-png-svg':'Choose illustrated hair, eyes, clothes and accessories, then export a 1800 × 2200 PNG or editable SVG. Select Transparent cutout for a clear background. The builder assembles preset parts and does not transform a photo or text prompt with AI.',
+
  'jpeg-png-webp-choose-image-format':'Use JPEG for photographs when some loss is acceptable, PNG for sharp graphics or transparency, and WebP for compact web images when the receiving application supports it. Compare exports at their intended display size; renaming a file does not convert it.',
  'compress-images-without-losing-important-detail':'Keep the original, resize a copy to the dimensions you need, then compare JPEG or WebP exports at different quality settings. Check actual bytes and important details such as text and faces before choosing the smaller file.',
  'passport-photo-size-print-layout':'Check the issuing authority’s current photo requirements before cropping or printing. Physical size alone does not establish acceptance: head position, lighting, background and permitted edits also matter. Nepocore makes a layout and does not certify compliance.',
