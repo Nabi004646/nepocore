@@ -13,10 +13,6 @@
   X-Robots-Tag: noindex, follow
 /*.mjs
   Cache-Control: public, max-age=0, must-revalidate
-/assets/resources/*.pdf
-  Link: <https://nepocore.com/resources/>; rel="canonical"
-/assets/resources/*.json
-  X-Robots-Tag: noindex, follow
 /assets/social/*
   Cache-Control: public, max-age=31536000, immutable
 /assets/fonts/*

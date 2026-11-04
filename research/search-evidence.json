@@ -1,17 +1,134 @@
 {
- "reviewed_on":"2026-11-05",
- "method":"Public search-result review and primary-source checks, followed by matching intent to the shipped tool implementation. Search volume, keyword difficulty and current Nepocore positions were not measured. This is not a localized rank-tracking study.",
- "clusters":[
-  {"tool_ids":["calculator"],"query":"scientific calculator degrees online sin 30","observation":"Result pages emphasize angle units and worked trig examples. Nepocore is degree-only, so the page must state DEG without advertising a radian toggle.","evidence":["https://snowkit.io/scientific-calculator/","https://maxytools.com/en/scientific-calculator"],"priority":"P1"},
-  {"tool_ids":["anime-character"],"query":"chibi character creator free no sign up","observation":"Results mix illustrated builders with prompt/photo AI services. Target the illustrated-builder task and transparent PNG/SVG outputs; do not claim photo conversion.","evidence":["https://www.icongenerators.net/english.html","https://charat.me/en/chibi/pngtuber/"],"priority":"P1"},
-  {"tool_ids":["ielts-overall"],"query":"IELTS overall band calculator rounding","observation":"Overall bands, section averaging and rounding are recurring page topics. Explain the formula and recipient-specific limitations.","evidence":["https://ielts.idp.com/canada/results/how-ielts-is-marked/ielts-score-calculator","https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail"],"priority":"P1"},
-  {"tool_ids":["kids-worksheets"],"query":"free printable multiplication worksheet generator answer key","observation":"Printable output, custom settings and separate answer keys match the task. Worksheet Studio and the original practice pack supply these distinct uses.","evidence":["https://edulist.com/tools/multiplication-worksheet-generator","https://kissmyskills.com/pages/math-worksheet-generator"],"priority":"P1"},
-  {"tool_ids":["image-converter","image-compressor"],"query":"PNG to JPEG converter without upload browser","observation":"Format-pair and local-processing phrasing recur. Keep a single useful converter page with real format limits instead of making near-identical doorway pages for every pair.","evidence":["https://convertoom.com/png-to-jpg/","https://krawly.io/convert/png-to-jpg"],"priority":"P1"},
-  {"tool_ids":["bs-ad-converter"],"query":"BS AD date converter Nepal 2000 2090","observation":"Both conversion directions and supported calendar ranges are explicit in results. Nepocore should state its actual BS 2000–2090 range.","evidence":["https://converter.thenepal.io/date-converter/","https://www.engineeringnepal.com.np/p/nepali-date-converter.html"],"priority":"P1"},
-  {"tool_ids":["unicode-preeti"],"query":"Unicode to Preeti converter Nepali","observation":"Both direction names matter; instructions must explain legacy encoding and proofreading in the receiving application.","evidence":["https://laxmannepal.com.np/tools/nepali-tools/preeti-unicode-converter/","https://www.nepaltype.com/converter"],"priority":"P1"},
-  {"tool_ids":["word-search"],"query":"custom word search generator printable answer key","observation":"Own-word-list, printable-puzzle and answer-key tasks align with the generator. Placement limits are a useful differentiator to explain honestly.","evidence":["https://puzzleprintlab.com/en/word-search-maker"],"priority":"P1"},
-  {"tool_ids":["pdf-merge"],"query":"merge PDF files locally browser no upload","observation":"Local processing appears on many result pages. State the actual workflow and document checks without unsupported unlimited-size or universal-safety claims.","evidence":["https://runlocally.app/pdf-merge/","https://localdf.app/merge"],"priority":"P1"},
-  {"tool_ids":["qr-code"],"query":"free QR code generator PNG SVG no signup","observation":"PNG/SVG downloads and static-code use are recurring tasks. Add print checks and explain that encoded destinations cannot be replaced in existing printouts.","evidence":["https://qrvisual.com/","https://tinyqr.org/"],"priority":"P1"}
- ],
- "primary_references":["https://developers.google.com/search/docs/fundamentals/seo-starter-guide","https://developers.google.com/search/docs/essentials/spam-policies","https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail","https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sin","https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Image_types","https://developer.mozilla.org/en-US/docs/Web/SVG"]
+  "reviewed_on": "2026-11-05",
+  "method": "Public search-result review and primary-source checks, followed by matching intent to the shipped tool implementation. Search volume, keyword difficulty and current Nepocore positions were not measured. This is not a localized rank-tracking study.",
+  "clusters": [
+    {
+      "tool_ids": [
+        "calculator"
+      ],
+      "query": "scientific calculator degrees online sin 30",
+      "observation": "Result pages emphasize angle units and worked trig examples. Nepocore is degree-only, so the page must state DEG without advertising a radian toggle.",
+      "evidence": [
+        "https://snowkit.io/scientific-calculator/",
+        "https://maxytools.com/en/scientific-calculator"
+      ],
+      "priority": "P1"
+    },
+    {
+      "tool_ids": [
+        "anime-character"
+      ],
+      "query": "chibi character creator free no sign up",
+      "observation": "Results mix illustrated builders with prompt/photo AI services. Target the illustrated-builder task and transparent PNG/SVG outputs; do not claim photo conversion.",
+      "evidence": [
+        "https://www.icongenerators.net/english.html",
+        "https://charat.me/en/chibi/pngtuber/"
+      ],
+      "priority": "P1"
+    },
+    {
+      "tool_ids": [
+        "ielts-overall"
+      ],
+      "query": "IELTS overall band calculator rounding",
+      "observation": "Overall bands, section averaging and rounding are recurring page topics. Explain the formula and recipient-specific limitations.",
+      "evidence": [
+        "https://ielts.idp.com/canada/results/how-ielts-is-marked/ielts-score-calculator",
+        "https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail"
+      ],
+      "priority": "P1"
+    },
+    {
+      "tool_ids": [
+        "kids-worksheets"
+      ],
+      "query": "free printable multiplication worksheet generator answer key",
+      "observation": "Printable output, custom settings and separate answer keys match the task provided by the existing Worksheet Studio generator.",
+      "evidence": [
+        "https://edulist.com/tools/multiplication-worksheet-generator",
+        "https://kissmyskills.com/pages/math-worksheet-generator"
+      ],
+      "priority": "P1"
+    },
+    {
+      "tool_ids": [
+        "image-converter",
+        "image-compressor"
+      ],
+      "query": "PNG to JPEG converter without upload browser",
+      "observation": "Format-pair and local-processing phrasing recur. Keep a single useful converter page with real format limits instead of making near-identical doorway pages for every pair.",
+      "evidence": [
+        "https://convertoom.com/png-to-jpg/",
+        "https://krawly.io/convert/png-to-jpg"
+      ],
+      "priority": "P1"
+    },
+    {
+      "tool_ids": [
+        "bs-ad-converter"
+      ],
+      "query": "BS AD date converter Nepal 2000 2090",
+      "observation": "Both conversion directions and supported calendar ranges are explicit in results. Nepocore should state its actual BS 2000\u20132090 range.",
+      "evidence": [
+        "https://converter.thenepal.io/date-converter/",
+        "https://www.engineeringnepal.com.np/p/nepali-date-converter.html"
+      ],
+      "priority": "P1"
+    },
+    {
+      "tool_ids": [
+        "unicode-preeti"
+      ],
+      "query": "Unicode to Preeti converter Nepali",
+      "observation": "Both direction names matter; instructions must explain legacy encoding and proofreading in the receiving application.",
+      "evidence": [
+        "https://laxmannepal.com.np/tools/nepali-tools/preeti-unicode-converter/",
+        "https://www.nepaltype.com/converter"
+      ],
+      "priority": "P1"
+    },
+    {
+      "tool_ids": [
+        "word-search"
+      ],
+      "query": "custom word search generator printable answer key",
+      "observation": "Own-word-list, printable-puzzle and answer-key tasks align with the generator. Placement limits are a useful differentiator to explain honestly.",
+      "evidence": [
+        "https://puzzleprintlab.com/en/word-search-maker"
+      ],
+      "priority": "P1"
+    },
+    {
+      "tool_ids": [
+        "pdf-merge"
+      ],
+      "query": "merge PDF files locally browser no upload",
+      "observation": "Local processing appears on many result pages. State the actual workflow and document checks without unsupported unlimited-size or universal-safety claims.",
+      "evidence": [
+        "https://runlocally.app/pdf-merge/",
+        "https://localdf.app/merge"
+      ],
+      "priority": "P1"
+    },
+    {
+      "tool_ids": [
+        "qr-code"
+      ],
+      "query": "free QR code generator PNG SVG no signup",
+      "observation": "PNG/SVG downloads and static-code use are recurring tasks. Add print checks and explain that encoded destinations cannot be replaced in existing printouts.",
+      "evidence": [
+        "https://qrvisual.com/",
+        "https://tinyqr.org/"
+      ],
+      "priority": "P1"
+    }
+  ],
+  "primary_references": [
+    "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+    "https://developers.google.com/search/docs/essentials/spam-policies",
+    "https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sin",
+    "https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Image_types",
+    "https://developer.mozilla.org/en-US/docs/Web/SVG"
+  ]
 }

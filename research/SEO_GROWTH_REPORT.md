@@ -1,67 +1,40 @@
-# Nepocore search growth work — 5 November 2026
+# Nepocore search optimization — existing tools
 
-## What the research establishes
+Updated 5 November 2026 to reflect the owner's scope: improve discoverability of the tools already on Nepocore. The standalone printable pack, its landing page and its promotion have been removed. Existing worksheet generators remain.
 
-Public search results were reviewed for ten task clusters: degree-based scientific calculations, illustrated chibi creation, IELTS overall-band rounding, printable arithmetic worksheets, local image conversion, Nepali date conversion, Nepali font conversion, custom word searches, local PDF merging and QR exports. Eleven existing tools map directly to those reviewed clusters. A twelfth tool page, typing practice, received a clearer description based on its shipped behavior.
+## Research and implemented work
 
-The full inventory is [keyword-map.csv](keyword-map.csv), with 227 tool rows. [search-evidence.json](search-evidence.json) records the reviewed queries and example result pages. Other rows are explicitly marked as catalogue-derived candidates, not independently reviewed keyword opportunities.
+[The keyword map](keyword-map.csv) covers all 227 tools. [Search evidence](search-evidence.json) records public queries for ten task clusters. Eleven tools map directly to those reviewed clusters; a twelfth tool page was clarified from its implemented behavior. Other rows are explicitly labelled catalogue-derived candidates.
 
-No search-volume, keyword-difficulty, traffic or current-position numbers were available from a keyword provider or a fresh Search Console export. The P1/P2/P3 labels reflect task fit and a practical implementation order; they are not measured difficulty scores or promises of first-page results. This review was not a localized Nepal rank-tracking study.
+Search volume, keyword difficulty, current rankings and a fresh Search Console query export were not measured. Priority labels represent task fit and implementation order, not measured difficulty.
 
-## Changes implemented
-
-| Area | Completed change |
+| Area | Current work |
 | --- | --- |
-| 12 tool pages | Specific page titles, meta descriptions, visible H1s and practical task questions matched to real functionality |
-| 5 worksheet activity pages | Distinct titles and descriptions for math, weekly packs, spelling, word search and handwriting |
-| Scientific calculator guide | Original worked examples for DEG inputs, grouping, logs, roots, factorials and domain limits |
-| IELTS guide | Original score combinations, averaging, half-band boundaries and recipient-specific limitations |
-| Chibi guide | Illustrated-parts workflow, reproducible choices, transparent PNG/SVG exports and file-format checks |
-| Teaching resource | A six-page A4 PDF with three 20-question activities, separate answer keys, HTML equivalents and structured data |
-| Internal discovery | Tool-to-guide links, homepage field notes, resource links in the main footer and Worksheet Studio |
-| Crawler resources | Updated sitemap, feed dates, text companions and discovery directories; PDF canonical header points to the resource page |
-| Project presence | Current public-product README with contextual links and the correct AGPL-3.0 license |
+| 12 existing tool pages | Specific titles, descriptions, visible headings and practical questions matched to actual functionality |
+| 5 existing worksheet activity pages | Distinct metadata for math, weekly generation, spelling, word search and handwriting |
+| Supporting guides | Original worked explanations for degree-based calculations, IELTS rounding and illustrated chibi exports, linked to the relevant tools |
+| Internal navigation | Crawlable tool/category links and contextual tool-to-guide links |
+| Technical SEO | Canonicals, structured data, sitemap, robots instructions, feed, sharing metadata and readable text companions |
+| Project presence | GitHub README introducing and linking to working tools |
 
-The website now has 227 tools, 38 main practical guides, three additional Worksheet Studio guides, 325 generated HTML pages and 323 indexable canonical URLs. “Indexable” is a technical eligibility statement, not a claim that Google has indexed or ranked every page.
+The catalogue still contains 227 tools. There are 38 main practical guides and three Worksheet Studio usage guides. The removal leaves 324 generated HTML pages and 322 indexable canonical URLs. Indexable does not mean Google has indexed or ranked every URL.
 
-## Why these priorities
+## Removal and redirects
 
-- A degree-only calculator should state DEG explicitly. Adding an unimplemented radian mode to attract a query would mislead users.
-- A manual illustrated chibi builder should serve avatar/character customization searches. Prompt-based or photo-based AI generation is a different task.
-- Worksheet searches often name the output and answer key. The resource pack supplies an immediately usable example and an accessible alternative to the PDF.
-- IELTS visitors need the formula and rounding worked out, plus an explanation that overall scores do not decide admissions or visas.
-- Local image/PDF processing is relevant, but absolute claims of unlimited capacity or universal privacy were not added. Device memory, optional engines and organizational requirements still matter.
-- Nepal-specific conversion pages state their supported range or encoding boundaries instead of implying universal conversion coverage.
+The added `/resources/` landing page, sample PDF, problem data and generator source are removed. The homepage, footer, Worksheet Studio and discovery files no longer promote them. Legacy landing/download URLs redirect to the existing Worksheet Studio at `/worksheets/`.
 
-## Backlinks: completed versus prepared
+## Backlinks
 
-The source repository's README now provides contextual routes into the actual product and teaching resources. This is one project-controlled referral source; it is not seven independent editorial endorsements or proof of ranking credit.
+[The opportunity document](BACKLINK_OPPORTUNITIES.md) and [tracker](backlink-tracker.csv) now point to the actual toolkit, source repository and existing worksheet generator. Seven destinations have researched entry points and prepared material. None is marked submitted or earned, and no editor has been contacted. External publication requires the destination's account access and review.
 
-Seven external opportunities were researched: AlternativeTo, Product Hunt, DEV, SaaSHub, OpenAlternative, Teaching Ideas and MathsLinks. Their current entry points, audience fit, limitations and draft copy are in [BACKLINK_OPPORTUNITIES.md](BACKLINK_OPPORTUNITIES.md); [backlink-tracker.csv](backlink-tracker.csv) records all seven as prepared, not published.
+## Validation and measurement
 
-No external account was created, paid placement purchased, community post published, directory form submitted or editor contacted. Inclusion on another website depends on its owner and review process. The original resource and accurate product copy are ready for that review; no backlink is required to use the practice pack.
+The build audits generated pages for crawlability, unique metadata, heading structure, internal links, canonical URLs and assets. Functional checks retain the original tools and verify the worked guide examples. The initial JavaScript budget remains enforced.
 
-## Validation
-
-- 100 automated tests pass, including every new worked calculation, keyword coverage, all 60 worksheet answers and page-specific metadata.
-- Offline SEO audit checks all 325 generated HTML pages, 323 sitemap URLs, 20,798 internal links and 2,890 local asset references with no reported issue.
-- All 323 indexable pages are reachable from the homepage in the generated link graph.
-- The six PDF pages were rendered and inspected; question/answer pagination and A4 dimensions were checked.
-- The existing startup JavaScript budget continues to pass. Research and expanded editorial content do not join the initial module graph.
-
-Public HTTP checks passed on all 13 selected live resources after Cloudflare published commit `240071d`. The sitemap served 323 URLs, new pages returned the intended headings, and the PDF canonical header pointed to the resource page. See [deployment-verification.json](deployment-verification.json). Browser-based review is not assumed from an offline audit, and lab SEO scores are not presented as search rankings.
-
-## Next measurement cycle
-
-After Google has had time to recrawl, compare matching date ranges in Search Console. Export query and page data together where possible. Track impressions, clicks, CTR and average position for the priority URLs, and inspect indexing/canonical status when an important page has no impressions. A site-wide average alone can hide changes in the query mix.
-
-For each external placement, record the resulting public URL and referral visits before marking it published. Improve the resource when teachers or readers report a real issue. Expand the next tool cluster using observed queries and actual user tasks rather than publishing many near-identical keyword pages.
+For ranking decisions, compare query/page impressions, clicks, CTR and position over matching periods in Search Console after recrawling. Check indexing and canonical selection when an important tool has no impressions. Technical improvements alone do not establish a ranking gain.
 
 ## Primary guidance
 
-- Google SEO Starter Guide: https://developers.google.com/search/docs/fundamentals/seo-starter-guide
-- Google link-spam policies: https://developers.google.com/search/docs/essentials/spam-policies
-- Canonical URLs, including non-HTML resources: https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls
-- Official IELTS scoring: https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail
-
-The prospect document links to each platform's own submission or contribution information. Evidence was reviewed on the date above and may change.
+- https://developers.google.com/search/docs/fundamentals/seo-starter-guide
+- https://developers.google.com/search/docs/essentials/spam-policies
+- https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls

@@ -7,7 +7,7 @@
 - Use the [scientific calculator](https://nepocore.com/tools/calculator/) for degree-based trigonometry, powers, roots and logarithms.
 - Calculate an [IELTS overall band](https://nepocore.com/tools/ielts-overall/) from four section bands, with the pre-rounding average shown.
 - Create an [illustrated chibi character](https://nepocore.com/tools/anime-character/) and export PNG or editable SVG.
-- Make a custom worksheet in [Worksheet Studio](https://nepocore.com/worksheets/) or download the [original math practice pack](https://nepocore.com/resources/) with separate answer keys and an HTML text version.
+- Make a custom worksheet in [Worksheet Studio](https://nepocore.com/worksheets/) with your own settings and optional answer keys.
 - Browse the [complete toolkit](https://nepocore.com/tools/) and [worked guides](https://nepocore.com/blog/).
 
 Most input processing runs on the visitor's device. Some optional engines or libraries download assets from third-party services; online system voices may use their provider. Browser storage is optional for supported tools and is not a synchronized account. Read the [privacy policy](https://nepocore.com/privacy/) for those boundaries. A local tool does not replace an organization's rules for handling sensitive documents.
@@ -59,8 +59,6 @@ npm test
 
 Commit the generated PNG cards and `dist/social-images.mjs`. Cloudflare serves those committed images and does not need Pillow. Cards use content-hashed filenames and 1200 × 630 PNG dimensions; Open Graph and Twitter metadata are specific to each page.
 
-The original practice pack can be rebuilt with `python3 scripts/refresh-practice-pack.py` in a development environment with ReportLab. Commit the PDF and its generated problem data. The hosted build does not require ReportLab.
-
 To refresh the keyword inventory after changing the catalogue, run `node scripts/build-keyword-map.mjs`. Research labels distinguish publicly reviewed queries from catalogue-derived candidates; search volume and difficulty are not invented.
 
 ## Performance and discoverability
@@ -73,6 +71,6 @@ A sitemap, a passing technical audit and useful content do not guarantee a searc
 
 ## License and contribution
 
-The website source is licensed under **AGPL-3.0**; see [LICENSE](LICENSE). Third-party components retain their own license notices. The original sample practice pack may be printed and shared for home or classroom use; a source mention is welcome but optional.
+The website source is licensed under **AGPL-3.0**; see [LICENSE](LICENSE). Third-party components retain their own license notices.
 
 For a bug or correction, include the affected tool URL, browser, steps to reproduce and expected result. Do not attach private documents, real credentials or personal records. Read [SECURITY.md](SECURITY.md), [TOOLS.md](TOOLS.md) and the [editorial policy](https://nepocore.com/editorial-policy/) for project details.

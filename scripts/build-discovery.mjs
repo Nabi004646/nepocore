@@ -10,7 +10,6 @@ const notes=`Nepocore is a free collection of ${tools.length} browser-based tool
 const core=[
  link('Home','','Overview and tool discovery.'),
  link('All tools','tools/','Searchable catalogue of all free tools.'),
- link('Teaching resource pack','resources/','Original printable arithmetic sheets, separate answer keys and an accessible text version.'),
  link('Practical guides','blog/','Original walkthroughs, worked examples and source references.'),
  link('Worksheet Studio','worksheets/','Printable worksheet generators with browser previews and downloads.'),
  link('Worksheet guides','worksheets/guides/','Practical instructions for planning and printing practice sheets.'),
