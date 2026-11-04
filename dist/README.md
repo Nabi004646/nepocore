@@ -239,3 +239,5 @@ Set `SITE_URL` to the deployment origin before building. `npm run build` prepare
 ## Everyday workshop design
 
 The interface uses an editorial, paper-and-ink layout with a horizontal header, an accessible collection drawer, clickable CSS tool objects, a category index, and a creative studio panel. Shared styling in `dist/design.css` covers the tool workspaces, catalogue, guides and light/dark themes. Run `npm run build` before deployment to regenerate every static page from `src/shell.html`.
+
+Dark mode is the default for new visitors; a saved light-theme choice is respected. Motion includes floating tool objects, entrance and scroll reveals, and hover feedback. The pause control and system reduced-motion preference disable motion without hiding content.

@@ -31,3 +31,32 @@ body.neo-design.dark{--bg:#20221d;--panel:#292c24;--ink:#f5f2e9;--muted:#bcbdad;
 @media print{.neo-design .sidebar,.neo-design .topbar,.workshop-art,.neo-design .footer,.worksheet-studio-link{display:none}.neo-design #main{padding:0;max-width:none}.neo-design .tool-panel{box-shadow:none;border:1px solid #aaa}}
 /* Keep the decorative orbit within the content bounds. */
 .art-orbit{inset:85px 50px 50px}
+/* Motion is progressive enhancement; static content stays available to crawlers. */
+.neo-design .atelier-intro{animation:workshop-arrive .8s cubic-bezier(.2,.7,.2,1) both}
+.neo-design .hero-edition{animation:workshop-arrive .6s ease-out both}
+.neo-design .object-image{animation:workshop-float 8s ease-in-out infinite}
+.neo-design .object-qr{animation:workshop-float 7s ease-in-out -2s infinite}
+.neo-design .object-calc{animation:workshop-float 9s ease-in-out -4s infinite}
+.neo-design .art-stamp{animation:workshop-stamp .85s cubic-bezier(.2,.8,.3,1.15) .25s both}
+.neo-design .pick,.neo-design .category-row,.neo-design .tool-card,.neo-design .blog-card,.neo-design .guide-columns>section,.neo-design .workshop-create,.neo-design .workshop-privacy{transition:opacity .65s ease var(--stagger,0ms),translate .65s cubic-bezier(.2,.7,.2,1) var(--stagger,0ms),background .2s,border-color .2s}
+.neo-design .motion-enter{opacity:0;translate:0 24px}
+.neo-design .motion-enter:focus-within{opacity:1;translate:0 0}
+.neo-design .pick:hover .pick-object>svg{translate:0 -4px}
+.neo-design .atelier-search button:hover svg{translate:3px 0}
+.neo-design .atelier-search button svg{transition:translate .2s ease}
+.neo-design .category-row-arrow{transition:rotate .25s ease}
+.neo-design .category-row:hover .category-row-arrow{rotate:45deg}
+.neo-design .create-poster{transition:transform .45s cubic-bezier(.2,.7,.2,1)}
+.neo-design .workshop-create:hover .create-poster{transform:rotate(3deg) translateY(-5px)}
+.neo-design #motion-toggle{display:inline-flex;align-items:center;justify-content:center}
+.neo-design.motion-paused .motion-enter{opacity:1;translate:none}
+.neo-design.motion-paused .atelier-intro,.neo-design.motion-paused .hero-edition,.neo-design.motion-paused .art-stamp{opacity:1;translate:none;scale:1}
+.neo-design.motion-paused .category-row,.neo-design.motion-paused .atelier-search button svg,.neo-design.motion-paused .create-poster{transition:none}
+@keyframes workshop-arrive{from{opacity:0;translate:0 18px}to{opacity:1;translate:0 0}}
+@keyframes workshop-float{0%,100%{translate:0 0}50%{translate:0 -10px}}
+@keyframes workshop-stamp{from{opacity:0;scale:1.18}to{opacity:1;scale:1}}
+@media(max-width:720px){.neo-design #motion-toggle{min-width:29px;width:29px;height:36px}.neo-design .topbar{gap:8px}.neo-design .global-search{width:110px}}
+@media(max-width:420px){.neo-design .global-search{width:70px}.neo-design .topbar{gap:6px}.neo-design #motion-toggle{min-width:26px;width:26px}.atelier-brand{font-size:21px}}
+@media(prefers-reduced-motion:reduce){.neo-design .motion-enter{opacity:1;translate:none}.neo-design .atelier-intro,.neo-design .hero-edition,.neo-design .art-stamp{opacity:1;translate:none;scale:1}.neo-design *{animation:none!important;transition:none!important}}
+@media print{.neo-design .motion-enter{opacity:1;translate:none}}
+.neo-design.motion-paused *{transition:none!important}
