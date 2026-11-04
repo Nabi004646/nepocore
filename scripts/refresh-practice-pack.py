@@ -4,6 +4,8 @@ The finished PDF and its problem manifest are committed, so hosting has no new d
 """
 from pathlib import Path
 import json
+import hashlib
+import shutil
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.colors import HexColor
@@ -58,6 +60,7 @@ for index,item in enumerate(sets):
   c.setFillColor(muted);c.setFont('Helvetica',9);c.drawRightString(W-42,53,f'A4  |  Page {page} of 6')
   c.showPage()
 c.save()
+shutil.copyfile(target,OUT/('nepocore-math-practice-pack-'+hashlib.sha256(target.read_bytes()).hexdigest()[:12]+'.pdf'))
 (OUT/'practice-pack.json').write_text(json.dumps({'paper':'A4','question_pages':[1,3,5],'answer_pages':[2,4,6],'activities':sets},indent=2)+'\n')
-(ROOT/'dist/practice-pack.mjs').write_text('// Original practice data; generated with the PDF.\nexport const practicePack='+json.dumps(sets,separators=(',',':'))+';\n')
+(ROOT/'dist/practice-pack.mjs').write_text('// Original practice data; generated with the PDF.\nexport const practicePack='+json.dumps(sets,separators=(',',':'))+';\nexport const practicePackVersion=\"'+hashlib.sha256(target.read_bytes()).hexdigest()[:12]+'\";\n')
 print(target)
