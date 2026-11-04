@@ -1,0 +1,240 @@
+{
+  "checked_on": "2026-11-04",
+  "urls_attempted": 46,
+  "reachable": 41,
+  "unconfirmed": 5,
+  "confirmed_broken": 0,
+  "note": "One-time public retrieval check. Unconfirmed responses are not treated as broken links. Availability can change.",
+  "results": [
+    {
+      "url": "https://business.gov.au/finance/cash-flow/set-up-a-cash-flow-statement",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://consumer.gov/your-money/making-budget",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://developer.chrome.com/docs/devtools/network/reference/",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://developer.lacspace.com/packages/preeti",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toBlob",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/digest",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/sign",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries/Printing",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@page/size",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Image_types",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://files.consumerfinance.gov/f/documents/cfpb_your-money-your-goals_cash_flow_budget_tool_2018-11_ADA.pdf",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://github.com/PeculiarVentures/x509",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/client/in_mouse.cpp",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://github.com/id-Software/Quake-III-Arena/blob/master/code/client/cl_main.c",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://github.com/kushal1o1/nepali-num2word",
+      "status": "reachable",
+      "method": "GitHub public repository API confirmed repository exists and is not disabled."
+    },
+    {
+      "url": "https://github.com/qq15725/modern-gif",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://github.com/subeshb1/Nepali-Date",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://moecdc.gov.np/content/22/letter-gradinging-directory--2078--fourth-amendment-2081-/",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://moha.gov.np/en/page/government-and-public-holidays-in-2083",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://moha.gov.np/page/government-and-public-holidays-in-2083",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://mozilla.github.io/pdf.js/api/draft/module-pdfjsLib-PDFPageProxy.html",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://mozilla.github.io/pdf.js/examples/",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://myadcenter.google.com/",
+      "status": "unconfirmed",
+      "detail": "Redirects to a Google account/preference endpoint that the retrieval service could not access."
+    },
+    {
+      "url": "https://pacompendium.com/unite-conversions/",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://policies.google.com/technologies/partner-sites",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/2305711/",
+      "status": "unconfirmed",
+      "detail": "Only a minimal one-line response was returned; the article body was not confirmed."
+    },
+    {
+      "url": "https://www.acog.org/womens-health/faqs/how-your-fetus-grows-during-pregnancy",
+      "status": "unconfirmed",
+      "detail": "The retrieval service received HTTP 403; this does not establish that the link is broken."
+    },
+    {
+      "url": "https://www.cdc.gov/sleep/about/",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://www.consumerfinance.gov/documents/5782/cfpb_ymyg-toolkit_reducing-debt-worksheet.pdf",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://www.eff.org/dice",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://www.fao.org/4/Y5686e/y5686e07.htm",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://www.gnu.org/software/coreutils/manual/html_node/Numeric-Modes.html",
+      "status": "unconfirmed",
+      "detail": "The retrieval service timed out on two attempts."
+    },
+    {
+      "url": "https://www.nal.usda.gov/programs/fnic",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://www.nhs.uk/conditions/periods/fertility-in-the-menstrual-cycle/",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://www.nhs.uk/contraception/methods-of-contraception/natural-family-planning/",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://www.nhs.uk/pregnancy/finding-out/due-date-calculator/",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://www.nhs.uk/pregnancy/labour-and-birth/signs-that-labour-has-begun/",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://www.nrb.org.np/2020/11/%E0%A4%A8%E0%A5%87%E0%A4%AA%E0%A4%BE%E0%A4%B2%E0%A4%AE%E0%A4%BE-%E0%A4%B9%E0%A4%BE%E0%A4%B2-%E0%A4%95%E0%A4%A4%E0%A4%BF-%E0%A4%A6%E0%A4%B0%E0%A4%95%E0%A4%BE-%E0%A4%A8%E0%A5%8B%E0%A4%9F%E0%A4%B9/",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://www.nrb.org.np/departments/cmd/",
+      "status": "unconfirmed",
+      "detail": "The retrieval service timed out on two attempts."
+    },
+    {
+      "url": "https://www.qrcode.com/en/about/error_correction.html",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://www.qrcode.com/en/howto/code.html",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc3021.html",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc4632.html",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    },
+    {
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "status": "reachable",
+      "method": "Public retrieval returned page content."
+    }
+  ]
+}

@@ -82,3 +82,7 @@ Use PageSpeed Insights (https://pagespeed.web.dev/) on the homepage, a tool page
 - Search Console ownership: https://support.google.com/webmasters/answer/9008080
 - Web Vitals: https://web.dev/articles/vitals
 - Cloudflare HTTPS: https://developers.cloudflare.com/ssl/edge-certificates/additional-options/always-use-https/
+
+## One-time external link review
+
+On November 4, 2026, all 46 unique external references linked by generated HTML were attempted through public retrieval. Forty-one were reachable, including one repository confirmed through the GitHub API. Five could not be confirmed because of access restrictions, minimal responses or timeouts; none was identified as a definite broken link. See [EXTERNAL_LINK_REVIEW.json](EXTERNAL_LINK_REVIEW.json). These results are separate from the deterministic offline build audit and do not guarantee future third-party availability.
