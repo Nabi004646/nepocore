@@ -60,3 +60,12 @@ body.neo-design.dark{--bg:#20221d;--panel:#292c24;--ink:#f5f2e9;--muted:#bcbdad;
 @media(prefers-reduced-motion:reduce){.neo-design .motion-enter{opacity:1;translate:none}.neo-design .atelier-intro,.neo-design .hero-edition,.neo-design .art-stamp{opacity:1;translate:none;scale:1}.neo-design *{animation:none!important;transition:none!important}}
 @media print{.neo-design .motion-enter{opacity:1;translate:none}}
 .neo-design.motion-paused *{transition:none!important}
+
+/* Keep the main heading paint immediate; motion stays on supporting elements. */
+.neo-design .atelier-intro{animation:none}
+.neo-design .atelier-intro>p,.neo-design .atelier-search,.neo-design .atelier-suggestions{animation:workshop-arrive .6s cubic-bezier(.2,.7,.2,1) both}
+.neo-design .tool-card{contain-intrinsic-size:auto 230px}
+.neo-design .tool-grid.list .tool-card{contain-intrinsic-size:auto 100px}
+@media(max-width:720px){.neo-design input[type=search],.neo-design .field input:not([type=checkbox]):not([type=radio]),.neo-design .field select,.neo-design .field textarea{font-size:16px}}
+@media(prefers-reduced-motion:reduce){.neo-design .atelier-intro>p,.neo-design .atelier-search,.neo-design .atelier-suggestions{animation:none}}
+@media(max-width:360px){.neo-design .atelier-intro h1{font-size:clamp(42px,14.5vw,51px);letter-spacing:-3px}.neo-design .headline-star{font-size:29px;margin-left:8px;vertical-align:8px}.neo-design .atelier-suggestions{gap:9px;font-size:8px}.neo-design .index-heading h2{font-size:24px}.neo-design .workshop-create h2{font-size:39px}}
