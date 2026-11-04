@@ -1,11 +1,11 @@
 {
-  "pages_checked": 324,
-  "indexable_pages": 322,
-  "sitemap_urls": 322,
-  "internal_links_checked": 20405,
-  "local_asset_references_checked": 2881,
+  "pages_checked": 325,
+  "indexable_pages": 323,
+  "sitemap_urls": 323,
+  "internal_links_checked": 20798,
+  "local_asset_references_checked": 2890,
   "static_images_checked": 0,
-  "indexable_pages_reachable_from_home": 322,
+  "indexable_pages_reachable_from_home": 323,
   "intentional_noindex_pages": [
     "404.html",
     "favorites/index.html"

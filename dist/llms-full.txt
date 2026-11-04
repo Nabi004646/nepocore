@@ -8,6 +8,7 @@ Nepocore is a free collection of 227 browser-based tools and 38 practical guides
 
 - [Home](https://nepocore.com/): Overview and tool discovery.
 - [All tools](https://nepocore.com/tools/): Searchable catalogue of all free tools.
+- [Teaching resource pack](https://nepocore.com/resources/): Original printable arithmetic sheets, separate answer keys and an accessible text version.
 - [Practical guides](https://nepocore.com/blog/): Original walkthroughs, worked examples and source references.
 - [Worksheet Studio](https://nepocore.com/worksheets/): Printable worksheet generators with browser previews and downloads.
 - [Worksheet guides](https://nepocore.com/worksheets/guides/): Practical instructions for planning and printing practice sheets.

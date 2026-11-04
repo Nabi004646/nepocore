@@ -1,9 +1,3 @@
 # Common filename aliases; canonical resource names remain robots.txt and llms.txt.
 /robot.txt /robots.txt 301
 /llm.txt /llms.txt 301
-
-# Retired standalone resource links lead to the existing worksheet generator.
-/resources /worksheets/ 301
-/resources/ /worksheets/ 301
-/assets/resources/nepocore-math-practice-pack.pdf /worksheets/ 301
-/assets/resources/practice-pack.json /worksheets/ 301
