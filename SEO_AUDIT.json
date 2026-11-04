@@ -1,9 +1,8 @@
 {
-  "audited_on": "2026-11-04",
   "pages_checked": 321,
   "indexable_pages": 319,
   "sitemap_urls": 319,
-  "internal_links_checked": 19813,
+  "internal_links_checked": 20145,
   "local_asset_references_checked": 3166,
   "static_images_checked": 0,
   "indexable_pages_reachable_from_home": 319,

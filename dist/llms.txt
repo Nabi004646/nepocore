@@ -23,6 +23,11 @@ Nepocore is a free collection of 227 browser-based tools and 35 practical guides
 - [Nepal tools](https://nepocore.com/categories/nepal/): 8 tools in this collection.
 - [Education & worksheets](https://nepocore.com/categories/education/): 5 tools in this collection.
 
+## Readable text
+
+- [Image converter instructions](https://nepocore.com/tools/image-converter/index.md): Plain text instructions, example and limits.
+- [Image format guide](https://nepocore.com/blog/jpeg-png-webp-choose-image-format/index.md): Full guide with quick answer and references.
+
 ## Optional
 
 - [Expanded public directory](https://nepocore.com/llms-full.txt): All tool and guide links, organized by subject.

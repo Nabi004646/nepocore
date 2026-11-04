@@ -6,6 +6,13 @@
   Cache-Control: public, max-age=0, must-revalidate
 /sw.js
   Cache-Control: no-cache
+/*.md
+  Content-Type: text/markdown; charset=utf-8
+  X-Robots-Tag: noindex, follow
+/*.mjs
+  Cache-Control: public, max-age=0, must-revalidate
+/assets/social/*
+  Cache-Control: public, max-age=31536000, immutable
 /assets/fonts/*
   Cache-Control: public, max-age=31536000, immutable
 /*

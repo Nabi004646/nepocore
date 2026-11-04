@@ -29,6 +29,7 @@ const full=`# Nepocore: expanded public directory\n\n> Canonical links and descr
  ['Spelling practice guide','worksheets/guides/spelling-with-your-own-words/','Use a personal spelling list effectively.'],
  ['Printing guide','worksheets/guides/print-worksheets-a4-letter/','Print cleanly on A4 or US Letter.'],
 ].map(([label,path,description])=>link(label,path,description)).join('\n')}\n\n## Policies and site resources\n\n${policies.map(([label,path,description])=>link(label,path,description)).join('\n')}\n${link('Robots instructions','robots.txt','Crawler access instructions.')}\n${link('XML sitemap','sitemap.xml','Canonical indexable page URLs.')}\n${link('RSS feed','blog/feed.xml','Guide updates.')}\n`;
-await writeFile('dist/llms.txt',intro);
-await writeFile('dist/llms-full.txt',full);
+const readable=`\n## Readable text versions\n\nThese Markdown companions contain the same public instructions or guide content as their canonical HTML pages. Interactive tools still require the HTML page and JavaScript.\n\n${tools.map(t=>link(t.title+' instructions','tools/'+t.id+'/index.md',t.description)).join('\n')}\n${blogIndex.map(p=>link(p.title,'blog/'+p.slug+'/index.md',p.summary)).join('\n')}\n`;
+await writeFile('dist/llms.txt',intro.replace('## Optional', '## Readable text\n\n'+link('Image converter instructions','tools/image-converter/index.md','Plain text instructions, example and limits.')+'\n'+link('Image format guide','blog/jpeg-png-webp-choose-image-format/index.md','Full guide with quick answer and references.')+'\n\n## Optional'));
+await writeFile('dist/llms-full.txt',full+readable);
 console.log(JSON.stringify({discovery_files:['llms.txt','llms-full.txt'],tools:tools.length,guides:blogIndex.length}));

@@ -5,6 +5,7 @@ const env = { ...process.env, SITE_URL: process.env.SITE_URL || 'https://nepocor
 for (const [command, args] of [
   [process.execPath, ['scripts/build-static.mjs']],
   [process.execPath, ['scripts/build-worksheets.mjs']],
+  [process.execPath, ['scripts/build-geo.mjs']],
   [process.execPath, ['scripts/build-discovery.mjs']],
   ['python3', ['scripts/package-downloads.py']],
   ['python3', ['scripts/audit-seo.py']],

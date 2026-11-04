@@ -69,3 +69,7 @@ body.neo-design.dark{--bg:#20221d;--panel:#292c24;--ink:#f5f2e9;--muted:#bcbdad;
 @media(max-width:720px){.neo-design input[type=search],.neo-design .field input:not([type=checkbox]):not([type=radio]),.neo-design .field select,.neo-design .field textarea{font-size:16px}}
 @media(prefers-reduced-motion:reduce){.neo-design .atelier-intro>p,.neo-design .atelier-search,.neo-design .atelier-suggestions{animation:none}}
 @media(max-width:360px){.neo-design .atelier-intro h1{font-size:clamp(42px,14.5vw,51px);letter-spacing:-3px}.neo-design .headline-star{font-size:29px;margin-left:8px;vertical-align:8px}.neo-design .atelier-suggestions{gap:9px;font-size:8px}.neo-design .index-heading h2{font-size:24px}.neo-design .workshop-create h2{font-size:39px}}
+
+/* A concise answer beside the full, sourced explanation. */
+.quick-answer{padding:clamp(20px,4vw,32px);margin:0 0 32px;border:1px solid var(--line);border-left:4px solid #f1663c;border-radius:12px;background:color-mix(in srgb,currentColor 3%,transparent)}
+.quick-answer h2{margin-top:12px}.quick-answer p{font-size:1.05em;line-height:1.8}.quick-answer a,.text-version a{font-size:.85rem;text-underline-offset:4px}.article-toc .blog-read{display:block;margin-top:14px}

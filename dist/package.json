@@ -6,7 +6,8 @@
   "scripts": {
     "build": "node scripts/build-cloudflare.mjs",
     "test": "node --test tests/*.test.mjs",
-    "audit:seo": "python3 scripts/audit-seo.py"
+    "audit:seo": "python3 scripts/audit-seo.py",
+    "refresh:social": "node scripts/refresh-social.mjs"
   },
   "engines": {
     "node": ">=22"

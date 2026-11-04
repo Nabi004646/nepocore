@@ -246,3 +246,15 @@ Dark mode is the default for new visitors; a saved light-theme choice is respect
 ## SEO checks and Search Console
 
 The production build audits every generated page, internal link and local asset. Run `npm run audit:seo` after building. See [SEO.md](SEO.md) for the screenshot checklist, Search Console verification setup, performance measurement and the four-week backlink plan.
+
+## GEO and sharing metadata
+
+Guide pages include a visible quick answer, worked methods, linked references and separate published/modified dates. Their BlogPosting data mirrors the visible content. These improvements support clear retrieval and attribution; no AI citation or ranking is promised.
+
+All 227 tools and 35 guides have `index.md` companions linked with `rel="alternate"` and listed in `llms-full.txt`. The Markdown copies carry canonical-page links and `X-Robots-Tag: noindex, follow` so search indexing stays focused on HTML. `llms.txt` is an optional discovery aid, not a Google indexing requirement.
+
+Every generated page has a distinct 1200×630 PNG Open Graph card, Twitter large-image metadata and descriptive image alt text. Client navigation updates the image, canonical URL and article metadata too. Cards have content-hashed filenames for reliable cache refresh.
+
+After adding pages or changing titles/descriptions, run `npm run refresh:social` in a development environment with Python Pillow and DejaVu fonts (`/usr/share/fonts/truetype/dejavu`), then `npm test`. The script rebuilds metadata, renders cards, updates `dist/social-images.mjs`, and runs the regular build/audit. Commit the generated PNGs and manifest. Cloudflare builds use the committed images and require no Pillow installation.
+
+Reference standards: https://ogp.me/ and https://developers.google.com/search/docs/fundamentals/ai-optimization-guide .
