@@ -225,3 +225,17 @@ Vendored dependencies retain their own copyright headers. Background-removal pac
 
 - PDF.js 6.4.299 and bundled auxiliary assets: Apache-2.0 and retained third-party notices, served locally.
 - Noto Sans Devanagari 2.007: SIL Open Font License 1.1; bundled original font subsets, license and provenance.
+
+
+## Design refresh — Everyday, upgraded
+
+The shared interface uses `dist/design.css` and `dist/design.mjs`, with a redesigned homepage, tool collections, favorites, browser-local recent history, light/dark themes, and CSS dimensional accents. Tool processing and the original guide content remain available. The standalone Worksheet Studio uses `dist/worksheets/refresh.css`.
+
+Editable desktop and mobile design: https://www.figma.com/design/fdmOVyOGabIQbhgziZfSA2
+
+Set `SITE_URL` to the deployment origin before building. `npm run build` prepares the static site, Worksheet Studio, and corresponding source download. Cloudflare Pages uses `dist` as the output folder.
+
+
+## Everyday workshop design
+
+The interface uses an editorial, paper-and-ink layout with a horizontal header, an accessible collection drawer, clickable CSS tool objects, a category index, and a creative studio panel. Shared styling in `dist/design.css` covers the tool workspaces, catalogue, guides and light/dark themes. Run `npm run build` before deployment to regenerate every static page from `src/shell.html`.
