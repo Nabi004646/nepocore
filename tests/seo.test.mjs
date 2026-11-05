@@ -15,9 +15,16 @@ test('Homepage build and client navigation both render the workshop redesign', a
  const {pageHTML}=await import('../dist/views.mjs');
  const built=await read('index.html');
  const runtime=pageHTML({type:'home'});
+ const graph=JSON.parse(built.match(/<script type="application\/ld\+json" id="site-structured-data">([\s\S]*?)<\/script>/)[1])['@graph'];
+ const websites=graph.filter(x=>x['@type']==='WebSite');assert.equal(websites.length,1);
+ assert.equal(websites[0].name,'Nepocore');assert.ok(websites[0].alternateName.includes('Nepocore Tools'));
+ assert.ok(websites[0].alternateName.includes(new URL(websites[0].url).hostname));
+ const org=graph.find(x=>x['@type']==='Organization');assert.equal(websites[0].publisher['@id'],org['@id']);assert.equal(org.alternateName,'Nepocore Tools');
+
  for(const html of [built,runtime]){
   assert.match(html,/<section class="atelier-hero">/);
   assert.match(html,/Less friction\./);
+  assert.match(html,/Nepocore brings 227 free online tools/);
   assert.match(html,/class="workshop-art"/);
   assert.doesNotMatch(html,/<section class="hero">/);
  }
