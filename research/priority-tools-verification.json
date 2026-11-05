@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-05",
+  "automated_tests": {
+    "passed": 104,
+    "failed": 0
+  },
+  "seo_audit": {
+    "html_pages": 325,
+    "indexable_urls": 323,
+    "issues": 0
+  },
+  "browser_checks": {
+    "ielts_boundary_examples": "6.25 -> 6.5; 7.75 -> 8.0",
+    "age_cutoff_example": "2006-06-15 to 2027-03-01 -> 20 years 8 months 14 days",
+    "leap_day_example": "2000-02-29 to 2025-02-28 -> 25 years",
+    "resume_live_preview": "name changes reflected; blank Experience omitted; one page H1",
+    "image_target_100000_bytes": {
+      "download_bytes": 94974,
+      "dimensions": [
+        1000,
+        700
+      ],
+      "target_met": true
+    },
+    "image_target_1000_bytes": {
+      "output_bytes": 13047,
+      "target_met": false
+    },
+    "image_manual_mode": "quality input enabled after target reset to zero"
+  },
+  "limits": [
+    "Mobile-specific browser testing was not performed.",
+    "Google index status and rankings require Search Console; they were not measured."
+  ]
+}

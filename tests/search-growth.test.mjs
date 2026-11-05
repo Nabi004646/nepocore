@@ -9,14 +9,14 @@ import {calculate,ieltsOverall} from '../dist/core.mjs';
 import {escapeHTML} from '../dist/core.mjs';
 const read=name=>readFile(new URL('../dist/'+name,import.meta.url),'utf8');
 test('Reviewed tool intents have visible matching headings, truthful task answers and unique metadata',async()=>{
- assert.equal(Object.keys(searchIntents).length,12);
+ assert.ok(Object.keys(searchIntents).length>=12);
  const titles=new Set();for(const [id,intent]of Object.entries(searchIntents)){
   const meta=seoMeta('tool',id),html=await read('tools/'+id+'/index.html');
   assert.equal(meta.title,intent.title);assert.ok(meta.description.length<=159);
   assert.ok(html.includes('<h1>'+escapeHTML(intent.heading)+'</h1>'),id);
   for(const [q,a]of intent.questions){assert.ok(html.includes(escapeHTML(q)),id);assert.ok(html.includes(escapeHTML(a)),id);}
   titles.add(meta.title);
- }assert.equal(titles.size,12);
+ }assert.equal(titles.size,Object.keys(searchIntents).length);
 });
 test('Every example in the new calculation guides matches the shipped arithmetic',()=>{
  for(const [expression,value]of [['sin(30)',.5],['cos(60)',.5],['2^5',32],['sqrt(144)',12],['log(1000)',3],['5!',120],['(12+8)*3',60],['12+8*3',36],['1200*(1-15/100)',1020]])assert.ok(Math.abs(calculate(expression)-value)<1e-10,expression);

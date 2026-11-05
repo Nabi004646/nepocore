@@ -1,3 +1,4 @@
+import {priorityIntents} from './priority-tools.mjs';
 // Reviewed search phrases, matched to the operations these tools actually provide.
 // These are content priorities, not search-volume estimates or ranking guarantees.
 export const searchIntents={
@@ -14,4 +15,5 @@ export const searchIntents={
  'typing-test':{keyword:'typing speed test WPM accuracy',title:'Typing Speed Test — WPM & Accuracy | Nepocore',heading:'Typing speed test with WPM and accuracy',description:'Take a timed typing test in your browser. Review words per minute and accuracy from your practice session. No account is needed.',questions:[['Does one result establish my typing speed?','A single run is a practice measurement. Compare repeated sessions with similar text and conditions, and review accuracy alongside WPM.']]},
  'kids-worksheets':{keyword:'printable alphabet math handwriting worksheets',title:'Printable Alphabet, Math & Handwriting Worksheets | Nepocore',heading:'Printable alphabet, math and handwriting worksheets',description:'Create alphabet, math, handwriting and coloring practice sheets. Preview and download printable worksheets, with answer keys where the activity supports them.',questions:[['Are these worksheets tied to an official curriculum?','No curriculum alignment or developmental assessment is claimed. Choose a skill your learner is ready to practise, preview the worksheet and adapt the task.']]}
 };
+Object.assign(searchIntents,priorityIntents);
 export function searchQuestionsHTML(id,escape){const entry=searchIntents[id];return entry?.questions?`<section class="tool-faq"><h2>Before you begin</h2>${entry.questions.map(([q,a])=>`<details><summary>${escape(q)}</summary><p>${escape(a)}</p></details>`).join('')}</section>`:'';}
