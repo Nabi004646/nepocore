@@ -6,7 +6,7 @@ Reviewed 28 October 2026 for the Nepocore v7 update. This is a focused source an
 
 The application is a static browser toolkit. It has no application upload server, database, payment flow or API credentials. Hosting infrastructure and any private-site authentication remain the host’s responsibility. Uploaded files and entered tool data are processed in the page unless the visitor explicitly exports or locally saves a record. System online speech voices are a documented exception: their provider may receive text.
 
-No advertising or analytics is enabled. Adding either later introduces new third-party code and privacy boundaries and requires its own review. See ADSENSE_SETUP.md.
+Google Analytics (G-R6E4FXVHNG) is installed through the standard Google tag in every generated HTML page. It loads third-party code from Google and measures website usage; see the site privacy and cookie disclosures. Advertising remains disabled. See ADSENSE_SETUP.md for future advertising integration.
 
 ## Controls checked
 

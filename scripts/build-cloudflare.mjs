@@ -7,6 +7,7 @@ for (const [command, args] of [
   [process.execPath, ['scripts/build-worksheets.mjs']],
   [process.execPath, ['scripts/build-geo.mjs']],
   [process.execPath, ['scripts/build-discovery.mjs']],
+  [process.execPath, ['scripts/install-google-tag.mjs']],
   ['python3', ['scripts/package-downloads.py']],
   ['python3', ['scripts/audit-seo.py']],
 ]) {
