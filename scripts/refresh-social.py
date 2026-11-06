@@ -50,7 +50,7 @@ for page in sorted(DIST.rglob('*.html')):
     if not head.canonical: continue
     key = urlsplit(head.canonical).path
     title = head.title.strip(); description = head.meta['description']
-    digest = hashlib.sha256(('nepocore-og-v1\n' + title + '\n' + description).encode()).hexdigest()[:16]
+    digest = hashlib.sha256(('nepocore-og-v1'+ ('-cloud-blue' if key in ('/', '/sites/') else '') +'\n' + title + '\n' + description).encode()).hexdigest()[:16]
     filename = digest + '.png'; files.add(filename)
     manifest[key]={'file':'assets/social/'+filename,'title':title,'description':description}
     existing=out/filename
@@ -58,18 +58,18 @@ for page in sorted(DIST.rglob('*.html')):
         data=existing.read_bytes()
         if data[:8]==b'\x89PNG\r\n\x1a\n' and len(data)>32 and int.from_bytes(data[16:20],'big')==1200 and int.from_bytes(data[20:24],'big')==630:
             continue
-    image = Image.new('RGB', (1200, 630), '#181b18'); d = ImageDraw.Draw(image)
+    image = Image.new('RGB', (1200, 630), '#f5f7fa'); d = ImageDraw.Draw(image)
     # Flat shapes keep the preview legible even when displayed as a small thumbnail.
-    d.rounded_rectangle((24,24,1176,606),24,outline='#40473c',width=2)
-    d.rounded_rectangle((905,44,1150,96),26,fill='#d9ef8b')
+    d.rounded_rectangle((24,24,1176,606),24,outline='#cbd5e1',width=2)
+    d.rounded_rectangle((905,44,1150,96),26,fill='#dce6f2')
     label = 'PRACTICAL GUIDE' if head.meta.get('og:type') == 'article' else 'FREE BROWSER TOOL' if key.startswith('/tools/') and key != '/tools/' else 'THE EVERYDAY TOOLKIT'
     label_font=font(13,True); label_width=d.textlength(label,font=label_font)
-    d.text((1028-label_width/2,61),label,font=label_font,fill='#181b18')
+    d.text((1028-label_width/2,61),label,font=label_font,fill='#243447')
     import math
     for n in range(8):
         a=n*math.pi/4
-        d.line((79+11*math.cos(a),75+11*math.sin(a),79+26*math.cos(a),75+26*math.sin(a)),fill='#ff764a',width=5)
-    d.text((121,48),'nepocore.',font=font(39,True),fill='#f5f0df')
+        d.line((79+11*math.cos(a),75+11*math.sin(a),79+26*math.cos(a),75+26*math.sin(a)),fill='#2563eb',width=5)
+    d.text((121,48),'nepocore.',font=font(39,True),fill='#243447')
     display=title.replace(' | Nepocore Guides','').replace(' | Nepocore','')
     size=54
     while True:
@@ -78,16 +78,16 @@ for page in sorted(DIST.rglob('*.html')):
         size-=2
     y=163
     for line in lines:
-        d.text((68,y),line,font=face,fill='#f5f0df'); y+=size+14
+        d.text((68,y),line,font=face,fill='#243447'); y+=size+14
     desc_face=font(22); desc_lines=wrap(d,description,desc_face,1035)
     if len(desc_lines)>3: raise ValueError('Description exceeds card: '+title)
     y=max(375,y+16)
     for line in desc_lines:
-        d.text((70,y),line,font=desc_face,fill='#b7c0aa'); y+=31
+        d.text((70,y),line,font=desc_face,fill='#52647a'); y+=31
     if y>530: raise ValueError('Text exceeds footer: '+title)
-    d.line((70,541,1130,541),fill='#40473c',width=2)
-    d.text((70,565),'nepocore.com',font=font(19,True),fill='#d9ef8b')
-    d.text((856,565),'Less friction. More flow.',font=font(18),fill='#f5f0df')
+    d.line((70,541,1130,541),fill='#cbd5e1',width=2)
+    d.text((70,565),'nepocore.com',font=font(19,True),fill='#1d4ed8')
+    d.text((856,565),'Less friction. More flow.',font=font(18),fill='#243447')
     buffer=io.BytesIO();image.save(buffer,format='PNG',optimize=True)
     temporary=out/(filename+'.tmp');temporary.write_bytes(buffer.getvalue());temporary.replace(out/filename)
     manifest[key]={'file':'assets/social/'+filename,'title':title,'description':description}

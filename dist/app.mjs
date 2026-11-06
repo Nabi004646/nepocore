@@ -9,17 +9,17 @@ const main=document.querySelector('#main'),search=document.querySelector('#searc
 installToolFormBehavior(main);search.autocomplete='off';
 const read=(key,fallback)=>{try{return JSON.parse(localStorage.getItem(key))??fallback;}catch{return fallback;}};
 const save=(key,value)=>{try{localStorage.setItem(key,JSON.stringify(value));}catch{}};
-let cleanup=()=>{},observer,query='',page,layout=read('nepocore-layout','grid'),favorites=new Set(read('nepocore-favorites',[])),dark=read('nepocore-dark',true);
+let cleanup=()=>{},observer,query='',page,layout=read('nepocore-layout','grid'),favorites=new Set(read('nepocore-favorites',[])),dark=read('nepocore-cloud-blue-dark',false);
 const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
 let motion=read('nepocore-motion',true)&&!reducedMotion.matches;
 document.body.classList.toggle('dark',dark);
 document.body.classList.toggle('motion-paused',!motion);
 document.querySelector('#year').textContent=new Date().getFullYear();
 document.querySelector('#search-icon').innerHTML=icon('search');
-function themeButton(){document.querySelector('#theme-toggle').innerHTML=icon(dark?'sun':'moon');}
+function themeButton(){document.querySelector('#theme-toggle').innerHTML=icon(dark?'sun':'moon');document.querySelector('meta[name="theme-color"]')?.setAttribute('content',dark?'#111b2b':'#f5f7fa');}
 function motionButton(){const b=document.querySelector('#motion-toggle');if(!b)return;b.innerHTML=`<svg viewBox="0 0 24 24" aria-hidden="true">${motion?'<path d="M8 5v14M16 5v14"/>':'<path d="m8 4 12 8-12 8z"/>'}</svg>`;b.setAttribute('aria-label',motion?'Pause animations':'Enable animations');b.title=motion?'Pause animations':'Enable animations';b.setAttribute('aria-pressed',String(!motion));}
 themeButton();motionButton();
-document.querySelector('#theme-toggle').onclick=()=>{dark=!dark;document.body.classList.toggle('dark',dark);save('nepocore-dark',dark);themeButton();};
+document.querySelector('#theme-toggle').onclick=()=>{dark=!dark;document.body.classList.toggle('dark',dark);save('nepocore-cloud-blue-dark',dark);themeButton();};
 document.querySelector('#motion-toggle').onclick=()=>{motion=!motion;document.body.classList.toggle('motion-paused',!motion);save('nepocore-motion',motion);motionButton();animate();};
 reducedMotion.addEventListener?.('change',ev=>{if(ev.matches){motion=false;document.body.classList.add('motion-paused');motionButton();animate();}});
 const sidebar=document.querySelector('.sidebar'),menu=document.querySelector('#menu-toggle');

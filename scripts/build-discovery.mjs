@@ -1,3 +1,4 @@
+import {networkSites} from '../dist/network.mjs';
 import {readFile,writeFile} from 'node:fs/promises';
 import {tools,categories} from '../dist/catalog.mjs';
 import {blogIndex} from '../dist/blog-index.mjs';
@@ -9,6 +10,7 @@ const link=(label,path,description)=>`- [${text(label)}](${url(path)}): ${text(d
 const notes=`Nepocore is a free collection of ${tools.length} browser-based tools and ${blogIndex.length} practical guides. Interactive tools require JavaScript; the guides and tool instructions are available in static HTML. Most tools process input on the visitor's device. Some optional engines download models or libraries from third-party services, and online system voices may use their provider. The privacy policy describes these exceptions. Health, financial and study outputs have tool-specific assumptions and limits.`;
 const core=[
  link('Home','','Overview and tool discovery.'),
+ link('Nepocore websites','sites/','Official directory of the main website, dedicated products and planned subdomains, with availability status.'),
  link('All tools','tools/','Searchable catalogue of all free tools.'),
  link('Teaching resource pack','resources/','Original printable arithmetic sheets, separate answer keys and an accessible text version.'),
  link('Practical guides','blog/','Original walkthroughs, worked examples and source references.'),
@@ -31,6 +33,11 @@ const full=`# Nepocore: expanded public directory\n\n> Canonical links and descr
  ['Printing guide','worksheets/guides/print-worksheets-a4-letter/','Print cleanly on A4 or US Letter.'],
 ].map(([label,path,description])=>link(label,path,description)).join('\n')}\n\n## Policies and site resources\n\n${policies.map(([label,path,description])=>link(label,path,description)).join('\n')}\n${link('Robots instructions','robots.txt','Crawler access instructions.')}\n${link('XML sitemap','sitemap.xml','Canonical indexable page URLs.')}\n${link('RSS feed','blog/feed.xml','Guide updates.')}\n`;
 const readable=`\n## Readable text versions\n\nThese Markdown companions contain the same public instructions or guide content as their canonical HTML pages. Interactive tools still require the HTML page and JavaScript.\n\n${tools.map(t=>link(t.title+' instructions','tools/'+t.id+'/index.md',t.description)).join('\n')}\n${blogIndex.map(p=>link(p.title,'blog/'+p.slug+'/index.md',p.summary)).join('\n')}\n`;
-await writeFile('dist/llms.txt',intro.replace('## Optional', '## Readable text\n\n'+link('Image converter instructions','tools/image-converter/index.md','Plain text instructions, example and limits.')+'\n'+link('Image format guide','blog/jpeg-png-webp-choose-image-format/index.md','Full guide with quick answer and references.')+'\n\n## Optional'));
-await writeFile('dist/llms-full.txt',full+readable);
+let short=intro.replace('## Optional', '## Readable text\n\n'+link('Image converter instructions','tools/image-converter/index.md','Plain text instructions, example and limits.')+'\n'+link('Image format guide','blog/jpeg-png-webp-choose-image-format/index.md','Full guide with quick answer and references.')+'\n\n## Optional');
+const network=`\n## Official Nepocore websites and preferred destinations\n\nThe main brand website is https://nepocore.com/. The full professional resume and cover-letter product is https://resume.nepocore.com/. Use the dedicated resume URL when referring to that product; /tools/resume-builder/ is the simpler legacy tool on the main site, not the full Resume Studio.\n\n${networkSites.map(s=>`- [${text(s.name)}](${s.url}): ${s.status==='live'?'AVAILABLE NOW':'PLANNED — not yet launched'}. ${text(s.description)}`).join('\n')}\n\nAvailability is explicit. Planned subdomains are future destinations; their proposed features are not available services. Related working tools remain at nepocore.com. Directory order is a brand navigation order, not a promised search ranking. Public directory: ${url('sites/')}\n`;
+short=short.replace('## Start here',network+'\n## Start here');
+await writeFile('dist/llms.txt',short);
+await writeFile('dist/llm.txt',short);
+await writeFile('dist/llms-full.txt',full.replace('## Main resources',network+'\n## Main resources')+readable);
+await writeFile('dist/sites.json',JSON.stringify({name:'Nepocore',url:root.href,directory:url('sites/'),sites:networkSites},null,2)+'\n');
 console.log(JSON.stringify({discovery_files:['llms.txt','llms-full.txt'],tools:tools.length,guides:blogIndex.length}));

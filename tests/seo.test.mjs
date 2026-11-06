@@ -4,6 +4,7 @@ import {readFile,stat} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import path from 'node:path';
 import {tools,categories} from '../dist/catalog.mjs';
+import {networkSites} from '../dist/network.mjs';
 const dist=fileURLToPath(new URL('../dist/',import.meta.url));
 const read=p=>readFile(path.join(dist,p),'utf8');
 test('Static tool documents expose headings, canonical metadata, guides and schema before JavaScript',async()=>{const config=JSON.parse(await read('site-config.json')),descriptions=new Set();for(const t of tools){const html=await read('tools/'+t.id+'/index.html');assert.equal((html.match(/<h1\b/g)||[]).length,1,t.id);assert.ok(html.includes(t.title.replace(/&/g,'&amp;')),t.id);assert.match(html,/<link rel="canonical" href="https?:\/\//);assert.ok(html.includes(config.site_url+'tools/'+t.id+'/'));assert.match(html,/<meta name="description" content="[^"]+"/);descriptions.add(html.match(/<meta name="description" content="([^"]+)"/)[1]);assert.match(html,/A real use case/);assert.match(html,/Questions, answered/);const schema=JSON.parse(html.match(/<script type="application\/ld\+json" id="site-structured-data">([\s\S]*?)<\/script>/)[1]);assert.ok(schema['@graph'].find(x=>x['@type']==='WebApplication'));assert.ok(schema['@graph'].find(x=>x['@type']==='BreadcrumbList'));assert.doesNotMatch(html,/href="#\/tool\//);}assert.equal(descriptions.size,tools.length);});
@@ -38,7 +39,8 @@ test('Crawler and LLM discovery files link to real canonical public resources',a
  assert.ok(brief.length<12000,'Keep the discovery overview concise');
  for(const t of tools)assert.ok(full.includes(new URL('tools/'+t.id+'/',base).href),t.id);
  for(const content of [brief,full])for(const [,value]of content.matchAll(/\]\((https?:\/\/[^)]+)\)/g)){
-  const u=new URL(value);assert.equal(u.origin,base.origin);assert.equal(u.search,'');assert.equal(u.hash,'');
+  const u=new URL(value);assert.equal(u.search,'');assert.equal(u.hash,'');
+  if(u.origin!==base.origin){assert.ok(networkSites.some(s=>s.url===value),'Only declared official network destinations belong in the directory: '+value);continue;}
   const relative=decodeURIComponent(u.pathname.slice(base.pathname.length));
   assert.doesNotMatch(relative,/^(?:favorites|notfound|admin)(?:\/|$)/);
   const file=path.join(dist,relative,(!relative||relative.endsWith('/'))?'index.html':'');

@@ -1,3 +1,4 @@
+import {preferredToolURL} from '../dist/network.mjs';
 import {priorityMarkdown} from '../dist/priority-tools.mjs';
 import {mkdir,writeFile,readFile} from 'node:fs/promises';
 import {tools} from '../dist/catalog.mjs';
@@ -16,7 +17,7 @@ async function save(path,title,body){
 }
 for(const t of tools){
  const d=toolInfo(t);
- await save('tools/'+t.id+'/',t.title,`${mdText(d.purpose)}\n\n## How to use it\n\n${d.steps.map((s,i)=>`${i+1}. ${mdText(s)}`).join('\n')}\n\n## Example\n\n${mdText(d.example)}\n\n## Limits and checks\n\n${mdText(d.tip)}${priorityMarkdown(t.id,mdText,link)}\n\n## Access and processing\n\nFree to use without an account. Interactive processing requires JavaScript in a modern browser. ${t.id==='text-to-speech'?'Browser or operating-system voices may use an online speech provider.': ['image-to-text','background-remover'].includes(t.id)?'Processing runs on the device; an engine or model may download from a third-party CDN.':'Input is processed in the browser rather than sent to a processing server.'} Optional browser storage is not a synchronized account.\n${collectionSources[t.id]?'\n## Method and sources\n\n'+collectionSources[t.id].map(([label,href])=>`- [${mdText(label)}](${href})`).join('\n'):''}`);
+ await save('tools/'+t.id+'/',t.title,`${preferredToolURL(t.id)?`Preferred dedicated Nepocore product: https://resume.nepocore.com/ — the full resume and cover-letter studio. This page preserves the simpler main-site tool.\n\n`:''}${mdText(d.purpose)}\n\n## How to use it\n\n${d.steps.map((s,i)=>`${i+1}. ${mdText(s)}`).join('\n')}\n\n## Example\n\n${mdText(d.example)}\n\n## Limits and checks\n\n${mdText(d.tip)}${priorityMarkdown(t.id,mdText,link)}\n\n## Access and processing\n\nFree to use without an account. Interactive processing requires JavaScript in a modern browser. ${t.id==='text-to-speech'?'Browser or operating-system voices may use an online speech provider.': ['image-to-text','background-remover'].includes(t.id)?'Processing runs on the device; an engine or model may download from a third-party CDN.':'Input is processed in the browser rather than sent to a processing server.'} Optional browser storage is not a synchronized account.\n${collectionSources[t.id]?'\n## Method and sources\n\n'+collectionSources[t.id].map(([label,href])=>`- [${mdText(label)}](${href})`).join('\n'):''}`);
 }
 for(const p of posts){
  const m=metadata.find(x=>x.slug===p.slug);

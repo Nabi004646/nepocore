@@ -23,9 +23,9 @@ const origin=new URL(process.env.SITE_URL||'https://nepocore-daily-tools.vocalcl
 if(!['http:','https:'].includes(origin.protocol)||origin.search||origin.hash)throw Error('SITE_URL must be an HTTP(S) website root without a query or fragment.');
 if(!origin.pathname.endsWith('/'))origin.pathname+='/';
 const shell=await readFile(path.join(root,'src/shell.html'),'utf8'),urls=[];
-const revisions=Object.fromEntries(await Promise.all(['styles.css','design.css','app.mjs'].map(async name=>[name,createHash('sha256').update(await readFile(path.join(dist,name))).digest('hex').slice(0,12)])));
+const revisions=Object.fromEntries(await Promise.all(['styles.css','design.css','cloud-blue.css','app.mjs'].map(async name=>[name,createHash('sha256').update(await readFile(path.join(dist,name))).digest('hex').slice(0,12)])));
 
-const combinedCSS=(await readFile(path.join(dist,'styles.css'),'utf8'))+'\n'+(await readFile(path.join(dist,'design.css'),'utf8'));
+const combinedCSS=(await readFile(path.join(dist,'styles.css'),'utf8'))+'\n'+(await readFile(path.join(dist,'design.css'),'utf8'))+'\n'+(await readFile(path.join(dist,'cloud-blue.css'),'utf8'));
 const styleAsset='site-'+createHash('sha256').update(combinedCSS).digest('hex').slice(0,12)+'.css';
 await writeFile(path.join(dist,styleAsset),combinedCSS);
 const startupAssets=await clientAssets(dist);
@@ -42,7 +42,7 @@ for(const page of pages){
  const verification=publishing.publisherId&&!['privacy','cookies'].includes(page.type)?'<meta name="google-adsense-account" content="'+publishing.publisherId+'">':'';
  const head=`<head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<base href="${e(origin.pathname)}"><meta name="theme-color" content="#20221d"><meta name="referrer" content="strict-origin-when-cross-origin">
+<base href="${e(origin.pathname)}"><meta name="theme-color" content="#f5f7fa"><meta name="referrer" content="strict-origin-when-cross-origin">
 <title>${e(meta.title)}</title><meta name="description" content="${e(meta.description)}"><meta name="robots" content="${meta.noindex?'noindex,follow':'index,follow,max-image-preview:large'}"><link rel="canonical" href="${e(url)}">${verification}${searchConsoleVerification?'<meta name="google-site-verification" content="'+e(searchConsoleVerification)+'">':''}
 <meta property="og:type" content="${article?'article':'website'}"><meta property="og:site_name" content="Nepocore"><meta property="og:locale" content="en_US"><meta property="og:title" content="${e(meta.title)}"><meta property="og:description" content="${e(meta.description)}"><meta property="og:url" content="${e(url)}"><meta property="og:image" content="${e(social.image)}"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="${e(social.alt)}">
 ${article?'<meta property="article:published_time" content="'+articleMeta.date+'"><meta property="article:modified_time" content="'+(articleMeta.updated||articleMeta.date)+'">':''}
@@ -55,7 +55,7 @@ ${markdown?'<link rel="alternate" type="text/markdown" title="Plain text version
  .replace('<main id="main" tabindex="-1"></main>',`<main id="main" tabindex="-1">${pageHTML(page,{article})}</main>`)
  .replace('<aside class="sidebar"','<aside id="primary-sidebar" class="sidebar"')
  .replace('id="menu-toggle" aria-label="Toggle menu"','id="menu-toggle" aria-label="Toggle menu" aria-controls="primary-sidebar" aria-expanded="false"')
- .replace('<body class="neo-design dark">',`<body class="neo-design dark" data-page-type="${e(page.type)}" data-page-id="${e(page.id||'')}"><div class="reading-progress" aria-hidden="true"></div>`)
+ .replace('<body class="neo-design">',`<body class="neo-design" data-page-type="${e(page.type)}" data-page-id="${e(page.id||'')}"><div class="reading-progress" aria-hidden="true"></div>`)
  .replace('</aside>','</aside><button class="menu-scrim" id="menu-scrim" aria-label="Close menu" hidden></button>')
  .replace('<button class="icon-btn" id="theme-toggle" aria-label="Switch color theme"></button>','<button class="icon-btn" id="motion-toggle" aria-label="Pause animations" aria-pressed="false"></button><button class="icon-btn" id="theme-toggle" aria-label="Switch color theme"></button>')
  .replace('<div id="toast"','<button class="back-top icon-btn" id="back-top" aria-label="Back to top" hidden>↑</button><div id="toast"')
