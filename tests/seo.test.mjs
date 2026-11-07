@@ -12,7 +12,7 @@ test('Sitemap contains only real indexable pages and essential SEO assets exist'
 test('Static local asset references resolve for every generated tool page',async()=>{for(const t of tools){const html=await read('tools/'+t.id+'/index.html');for(const [,asset]of html.matchAll(/(?:src|href)="\.\/(assets\/[^"#?]+|[a-z-]+\.(?:mjs|css|webmanifest))"/g))assert.ok((await stat(path.join(dist,asset))).isFile(),`${t.id}: ${asset}`);}});
 
 
-test('Homepage build and client navigation both render the workshop redesign', async () => {
+test('Homepage and client navigation preserve the searchable directory and canonical identity', async () => {
  const {pageHTML}=await import('../dist/views.mjs');
  const built=await read('index.html');
  const runtime=pageHTML({type:'home'});
@@ -23,11 +23,13 @@ test('Homepage build and client navigation both render the workshop redesign', a
  const org=graph.find(x=>x['@type']==='Organization');assert.equal(websites[0].publisher['@id'],org['@id']);assert.equal(org.alternateName,'Nepocore Tools');
 
  for(const html of [built,runtime]){
-  assert.match(html,/<section class="atelier-hero">/);
-  assert.match(html,/Less friction\./);
-  assert.match(html,/Nepocore brings 227 free online tools/);
-  assert.match(html,/class="workshop-art"/);
-  assert.doesNotMatch(html,/<section class="hero">/);
+  assert.match(html,/<h1>Free Tools<\/h1>/);
+  assert.equal((html.match(/<h1[ >]/g)||[]).length,1);
+  assert.match(html,/data-tool-search role="search" action="\.\/tools\/" method="get"/);
+  assert.match(html,/name="q" type="search"/);
+  for(const id of ["image-converter","qr-code","calculator","pdf-merge","background-remover","ielts-overall"])assert.ok(html.includes("./tools/"+id+"/"),id);
+  assert.match(html,/href="https:\/\/resume\.nepocore\.com\/"/);
+  assert.doesNotMatch(html,/<section class="atelier-hero">/);
  }
 });
 

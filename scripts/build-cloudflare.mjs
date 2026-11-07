@@ -3,6 +3,7 @@ import { fileURLToPath } from 'node:url';
 const cwd = fileURLToPath(new URL('../', import.meta.url));
 const env = { ...process.env, SITE_URL: process.env.SITE_URL || 'https://nepocore.com/' };
 for (const [command, args] of [
+  [process.execPath, ['scripts/build-tool-previews.mjs']],
   [process.execPath, ['scripts/build-static.mjs']],
   [process.execPath, ['scripts/build-worksheets.mjs']],
   [process.execPath, ['scripts/build-geo.mjs']],
