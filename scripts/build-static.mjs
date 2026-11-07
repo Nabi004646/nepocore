@@ -1,13 +1,15 @@
 import {clientAssets} from './client-assets.mjs';
 import {socialMeta,markdownPath} from '../dist/social-meta.mjs';
 import {createHash} from 'node:crypto';
-import {readFile,writeFile,mkdir,unlink} from 'node:fs/promises';
+import {readFile,writeFile,mkdir,unlink,rm} from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {tools,categories} from '../dist/catalog.mjs';
 import {posts,metadata} from '../dist/blog-content/all.mjs';
 import {escapeHTML as e} from '../dist/core.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),dist=path.join(root,'dist');
+// Retired website directory: previous public URLs redirect to the homepage.
+await rm(path.join(dist,'sites'),{recursive:true,force:true});
 await writeFile(path.join(dist,'catalog-client.mjs'),'// Public catalogue data without build-time editorial imports.\nexport const tools='+JSON.stringify(tools)+';\nexport const categories='+JSON.stringify(categories)+';\nexport const guideCount='+posts.length+';\nexport {icon} from \'./icons.mjs\';\n');
 await writeFile(path.join(dist,'blog-index.mjs'),'// Generated from original guide content during the static build.\nexport const blogIndex='+JSON.stringify(metadata)+';\n');
 const {pageHTML,navHTML}=await import('../dist/views.mjs');

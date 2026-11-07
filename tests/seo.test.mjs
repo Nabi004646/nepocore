@@ -28,7 +28,7 @@ test('Homepage and client navigation preserve the searchable directory and canon
   assert.match(html,/data-tool-search role="search" action="\.\/tools\/" method="get"/);
   assert.match(html,/name="q" type="search"/);
   for(const id of ["image-converter","qr-code","calculator","pdf-merge","background-remover","ielts-overall"])assert.ok(html.includes("./tools/"+id+"/"),id);
-  assert.match(html,/href="https:\/\/resume\.nepocore\.com\/"/);
+  assert.doesNotMatch(html,/class="directory-resume"|href="\.\/sites\/"/);
   assert.doesNotMatch(html,/<section class="atelier-hero">/);
  }
 });
