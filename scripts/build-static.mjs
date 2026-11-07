@@ -57,7 +57,6 @@ ${markdown?'<link rel="alternate" type="text/markdown" title="Plain text version
  .replace('id="menu-toggle" aria-label="Toggle menu"','id="menu-toggle" aria-label="Toggle menu" aria-controls="primary-sidebar" aria-expanded="false"')
  .replace('<body class="neo-design">',`<body class="neo-design" data-page-type="${e(page.type)}" data-page-id="${e(page.id||'')}"><div class="reading-progress" aria-hidden="true"></div>`)
  .replace('</aside>','</aside><button class="menu-scrim" id="menu-scrim" aria-label="Close menu" hidden></button>')
- .replace('<button class="icon-btn" id="theme-toggle" aria-label="Switch color theme"></button>','<button class="icon-btn" id="motion-toggle" aria-label="Pause animations" aria-pressed="false"></button><button class="icon-btn" id="theme-toggle" aria-label="Switch color theme"></button>')
  .replace('<div id="toast"','<button class="back-top icon-btn" id="back-top" aria-label="Back to top" hidden>↑</button><div id="toast"')
  .replace('<span id="year"></span>','<span id="year">2026</span>');
  html=html.replace(/href="#\/privacy"/g,'href="./privacy/"').replace(/href="#\/about"/g,'href="./about/"').replace(/href="#\/terms"/g,'href="./terms/"').replace(/href="#\/faq"/g,'href="./faq/"').replace(/href="#\/"/g,'href="./"');
