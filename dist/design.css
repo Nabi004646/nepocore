@@ -16,3 +16,5 @@ body.neo-design.dark{--bg:#181b18;--panel:#202520;--ink:#f1f3ed;--muted:#b6bdb4;
 @media(max-width:370px){.neo-design .global-search{width:110px}.atelier-brand{font-size:20px}.neo-design .topbar{gap:8px}.atelier-brand img{width:28px;height:28px}.directory-resume>a{margin-left:0}.directory-resume>div{min-width:170px}}
 @media(prefers-reduced-motion:reduce){.neo-design *{animation:none!important;scroll-behavior:auto!important}.neo-design .tool-card,.neo-design .sidebar{transition:none}.neo-design .tool-card:hover{transform:none}}.motion-paused .animate-in{animation:none}.motion-paused .tool-card:hover{transform:none}
 .neo-design form.directory-search{padding:0;border:0;border-radius:0;background:none;box-shadow:none}
+
+.live-search-summary{display:flex;align-items:center;justify-content:space-between;gap:15px;margin:0 0 13px;font-size:12px}.live-search-summary[hidden],.all-tools-link[hidden]{display:none}.live-search-summary p{margin:0}.live-search-summary button{font-size:12px;color:var(--muted)}.live-search-summary button:hover{text-decoration:underline}
