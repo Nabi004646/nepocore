@@ -34,3 +34,13 @@ follow `ADSENSE_SETUP.md` if you decide to configure it later.
 
 This setup does not change your existing Cloudflare deployment or domain. Connect
 and verify the new Pages project before moving `nepocore.com` to it.
+
+## Canonical hostname
+
+The sitemap and page canonicals use `https://nepocore.com`. The Pages build
+also sends a canonical HTTP Link for requests on `www.nepocore.com`.
+
+For a permanent redirect, add a Cloudflare Single Redirect for
+`http.host eq "www.nepocore.com"` with status 301. Use the dynamic target
+`concat("https://nepocore.com", http.request.uri.path)` and enable **Preserve query string**.
+Pages' `_redirects` file accepts path rules and cannot match source hostnames.
