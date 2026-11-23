@@ -2,9 +2,9 @@ import {escapeHTML as e} from '../core.mjs';
 const alphabet='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const words=['Apple','Ball','Cat','Dog','Elephant','Fish','Giraffe','House','Ice cream','Jellyfish','Kite','Lion','Moon','Nest','Orange','Penguin','Queen','Rainbow','Sun','Tree','Umbrella','Violin','Whale','Xylophone','Yo-yo','Zebra'];
 export function mathQuestions({operation='add',limit=10,count=20,seed='practice-1'}={}){
- if(!['add','subtract','multiply','mixed'].includes(operation)||![10,20,100].includes(+limit)||![12,20,30].includes(+count))throw Error('Choose a supported arithmetic set.');
+ if(!['add','subtract','multiply','divide','mixed'].includes(operation)||![10,20,100].includes(+limit)||![12,20,30].includes(+count))throw Error('Choose a supported arithmetic set.');
  let state=2166136261;for(const c of String(seed))state=Math.imul(state^c.codePointAt(0),16777619)>>>0;const random=()=>((state=(Math.imul(state,1664525)+1013904223)>>>0)/4294967296),int=n=>Math.floor(random()*(n+1)),items=[],seen=new Set();
- for(let tries=0;items.length<+count&&tries<10000;tries++){const op=operation==='mixed'?['add','subtract','multiply'][int(2)]:operation;let a=int(op==='multiply'?12:+limit),b=int(op==='multiply'?12:+limit);if(op==='subtract'&&a<b)[a,b]=[b,a];const sign={add:'+',subtract:'−',multiply:'×'}[op],question=a+' '+sign+' '+b;if(seen.has(question))continue;seen.add(question);items.push({a,b,operation:op,question,answer:op==='add'?a+b:op==='subtract'?a-b:a*b});}
+ for(let tries=0;items.length<+count&&tries<10000;tries++){const op=operation==='mixed'?['add','subtract','multiply'][int(2)]:operation;let a=int(op==='multiply'?12:+limit),b=int(op==='multiply'?12:+limit);if(op==='divide'){b=1+int(11);a=(1+int(11))*b;}if(op==='subtract'&&a<b)[a,b]=[b,a];const sign={add:'+',subtract:'−',multiply:'×',divide:'÷'}[op],question=a+' '+sign+' '+b;if(seen.has(question))continue;seen.add(question);items.push({a,b,operation:op,question,answer:op==='add'?a+b:op==='subtract'?a-b:op==='divide'?a/b:a*b});}
  if(items.length!==+count)throw Error('Could not create enough unique questions. Choose another set.');return items;
 }
 const paperSize=paper=>paper==='letter'?{width:816,height:1056}:{width:794,height:1123};
@@ -24,7 +24,7 @@ export function coloringArt(theme){
 export function worksheetPages(options={}){
  const type=options.type||'alphabet',paper=options.paper==='letter'?'letter':'a4',{width:W,height:H}=paperSize(paper),opts={paper,name:options.name||''};let body='',title='',subtitle='',key=null,questions=[];
  if(type==='math'){
-  questions=mathQuestions({operation:options.operation||'add',limit:+options.limit||10,count:+options.count||20,seed:options.seed||'practice-1'});title={add:'Addition practice',subtract:'Subtraction practice',multiply:'Multiplication practice',mixed:'A little mixed math'}[options.operation||'add'];subtitle='Solve each problem. Take your time and show your thinking.';
+  questions=mathQuestions({operation:options.operation||'add',limit:+options.limit||10,count:+options.count||20,seed:options.seed||'practice-1'});title={add:'Addition practice',subtract:'Subtraction practice',multiply:'Multiplication practice',divide:'Division practice',mixed:'A little mixed math'}[options.operation||'add'];subtitle='Solve each problem. Take your time and show your thinking.';
   const columns=questions.length===30?3:2,rows=Math.ceil(questions.length/columns),cw=(W-80)/columns,rh=(H-220)/rows;
   function questionGrid(answers){return questions.map((q,i)=>{const x=48+i%columns*cw,y=177+Math.floor(i/columns)*rh;return `<text x="${x}" y="${y}" font-size="11" fill="#747b76">${i+1}.</text><text x="${x+24}" y="${y+28}" font-size="${columns===3?20:25}">${e(q.question)} = ${answers?q.answer:'____'}</text>${answers?'':`<path d="M${x+24} ${y+rh-12}H${x+cw-21}" stroke="#d4d7d5" stroke-dasharray="3 5"/>`}`;}).join('');}
   body=questionGrid(false);if(options.key==='yes')key=documentSVG(title+' · answers','Answer key · '+questions.length+' questions · set '+String(options.seed||'practice-1').slice(0,24),questionGrid(true),opts);
@@ -38,5 +38,6 @@ export function worksheetPages(options={}){
  }else if(type==='coloring'){
   const theme=options.theme||'cat';title='Color a little '+theme;subtitle='Choose your colors. Add a background. Make this picture your own.';const size=Math.min(W-90,H-242),x=(W-size)/2,y=167+(H-242-size)/2;body=`<g transform="translate(${x} ${y}) scale(${size/600})">${coloringArt(theme)}</g>`;
  }else throw Error('Choose a worksheet type.');
- const first=documentSVG(title,subtitle,body,opts);return {pages:key?[first,key]:[first],width:W,height:H,type,questions};
+ const customTitle=Array.from(String(options.title||'').trim()).slice(0,40).join('');
+ const first=documentSVG(customTitle||title,subtitle,body,opts);return {pages:key?[first,key]:[first],width:W,height:H,type,questions};
 }

@@ -44,7 +44,7 @@ for(const page of pages){
  const verification=publishing.publisherId&&!['privacy','cookies'].includes(page.type)?'<meta name="google-adsense-account" content="'+publishing.publisherId+'">':'';
  const head=`<head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<base href="${e(origin.pathname)}"><meta name="theme-color" content="#f5c842"><meta name="referrer" content="strict-origin-when-cross-origin">
+<base href="${e(origin.pathname)}"><meta name="theme-color" content="#0b0e11"><meta name="referrer" content="strict-origin-when-cross-origin">
 <title>${e(meta.title)}</title><meta name="description" content="${e(meta.description)}"><meta name="robots" content="${meta.noindex?'noindex,follow':'index,follow,max-image-preview:large'}"><link rel="canonical" href="${e(url)}">${verification}${searchConsoleVerification?'<meta name="google-site-verification" content="'+e(searchConsoleVerification)+'">':''}
 <meta property="og:type" content="${article?'article':'website'}"><meta property="og:site_name" content="Nepocore"><meta property="og:locale" content="en_US"><meta property="og:title" content="${e(meta.title)}"><meta property="og:description" content="${e(meta.description)}"><meta property="og:url" content="${e(url)}"><meta property="og:image" content="${e(social.image)}"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="${e(social.alt)}">
 ${article?'<meta property="article:published_time" content="'+articleMeta.date+'"><meta property="article:modified_time" content="'+(articleMeta.updated||articleMeta.date)+'">':''}
