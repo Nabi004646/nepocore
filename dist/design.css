@@ -17,3 +17,56 @@ body.neo-design{--bg:#fff;--panel:#fff;--ink:#111318;--muted:#566069;--line:#d9d
 .neo-design form.directory-search{padding:0;border:0;border-radius:0;background:none;box-shadow:none}
 
 .live-search-summary{display:flex;align-items:center;justify-content:space-between;gap:15px;margin:0 0 13px;font-size:12px}.live-search-summary[hidden],.all-tools-link[hidden]{display:none}.live-search-summary p{margin:0}.live-search-summary button{font-size:12px;color:var(--muted)}.live-search-summary button:hover{text-decoration:underline}
+
+/* Graphite workspace shared by the directory and tool pages. */
+body.neo-design {
+  color-scheme: dark;
+  --bg:#0b0e11; --panel:#11161a; --soft:#181e23; --line:#364048;
+  --ink:#f4f6f3; --muted:#b5bec4; --green:#ccff54;
+  --mint:#25320d; --active:#26370c; --accent:#baff00; --accent-hover:#d0ff53;
+  --on-accent:#141a08; --shadow:none; accent-color:var(--accent);
+}
+.neo-design .topbar {border-color:var(--line)}
+.atelier-brand img {filter:hue-rotate(34deg) saturate(1.5)}
+.neo-design #motion-toggle {display:inline-flex;align-items:center;justify-content:center;flex:none;margin:0}
+.neo-design .directory-intro {padding:clamp(18px,4vw,48px) 0 24px;border-bottom:1px solid var(--line)}
+.directory-title {position:relative;isolation:isolate;align-items:center;min-height:98px}
+.directory-title>div:first-child {max-width:80%}
+.directory-title h1,.neo-design .tool-heading h1 {font-size:clamp(34px,5.15vw,68px);line-height:1.03;letter-spacing:-.045em;overflow-wrap:anywhere}
+.directory-title p,.neo-design .tool-heading p {color:var(--muted);font-size:clamp(14px,2vw,18px);margin:12px 0 16px}
+.studio-jewel {position:absolute;right:4%;top:50%;width:clamp(54px,10vw,128px);aspect-ratio:1;transform:translateY(-50%);perspective:400px;pointer-events:none;z-index:-1}
+.studio-jewel i {position:absolute;inset:8%;background:conic-gradient(from 45deg,#dcff9c 0 25%,#83b91c 0 50%,#45670f 0 75%,#baff00 0);clip-path:polygon(50% 0,89% 22%,100% 65%,50% 100%,0 65%,11% 22%);animation:gem-turn 9s ease-in-out infinite;transform:rotateX(15deg) rotateY(-22deg)}
+.studio-jewel i:nth-child(2) {inset:7% 73% 66% 0;background:#768c49;animation-delay:-3s}
+.studio-jewel i:nth-child(3) {inset:69% 0 4% 74%;background:#accc60;animation-delay:-6s}
+@keyframes gem-turn {50% {transform:translateY(-10%) rotateX(-17deg) rotateY(40deg) rotateZ(10deg)}}
+.motion-paused .studio-jewel i {animation-play-state:paused}
+.neo-design form.directory-search>div {border-color:var(--line);background:var(--panel);border-radius:11px}
+.neo-design .task-strip {gap:8px;flex-wrap:wrap}
+.neo-design .task-strip a {border-color:var(--line);color:var(--ink);background:var(--soft)}
+.neo-design .directory-featured {margin-top:22px}
+.neo-design .tool-card,.neo-design .tool-panel {border-radius:12px}
+.neo-design .tool-card:hover,.neo-design .tool-card:focus-within {border-color:#a1bd6d}
+.neo-design .tool-preview {object-fit:cover;background:var(--soft)}
+.neo-design .tool-card .star-btn,.neo-design .tool-quick-actions .star-btn {background:var(--panel);color:var(--ink);border-color:var(--line)}
+.neo-design .star-btn.saved {color:var(--accent)}
+.neo-design .tool-quick-actions .star-btn {position:static;margin:0;min-height:36px;width:38px}
+.neo-design .tool-heading {display:grid;grid-template-columns:minmax(0,1fr) minmax(170px,30%);gap:24px;align-items:center;padding-block:12px 28px}
+.neo-design .tool-heading .tool-title-line {align-items:flex-start}
+.neo-design .tool-heading .tool-icon {flex:none;color:var(--accent)}
+.tool-cover {margin:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--soft)}
+.tool-cover img {display:block;width:100%;height:auto;aspect-ratio:2/1;object-fit:cover}
+.tool-quick-actions {display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.neo-design .secondary {background:var(--soft);border-color:var(--line);color:var(--ink)}
+.neo-design .btn.primary {color:var(--on-accent);background:var(--accent);border-color:var(--accent)}
+.neo-design .btn.primary:hover {background:var(--accent-hover)}
+.neo-design .vector-preview {background:#222930}
+.neo-design .result-output,.neo-design .result-details>div,.neo-design .form-note {color:var(--muted)}
+.neo-design :focus-visible {outline-color:var(--accent)}
+#tool-input {scroll-margin-top:16px}
+@media(max-width:600px) {
+ .neo-design .tool-heading {grid-template-columns:1fr;gap:14px;padding-bottom:18px}
+ .neo-design .tool-heading .tool-icon {display:none}
+ .tool-cover img {aspect-ratio:3/1}
+ .directory-title>div:first-child {max-width:76%}
+ .neo-design .topbar #motion-toggle {display:none}
+}

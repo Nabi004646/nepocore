@@ -23,11 +23,11 @@ test('Homepage and client navigation preserve the searchable directory and canon
  const org=graph.find(x=>x['@type']==='Organization');assert.equal(websites[0].publisher['@id'],org['@id']);assert.equal(org.alternateName,'Nepocore Tools');
 
  for(const html of [built,runtime]){
-  assert.match(html,/<h1>Free Tools<\/h1>/);
+  assert.match(html,/<h1>Free tools for everyday projects<\/h1>/);
   assert.equal((html.match(/<h1[ >]/g)||[]).length,1);
   assert.match(html,/data-tool-search role="search" action="\.\/tools\/" method="get"/);
   assert.match(html,/name="q" type="search"/);
-  for(const id of ["image-converter","qr-code","calculator","pdf-merge","background-remover","ielts-overall"])assert.ok(html.includes("./tools/"+id+"/"),id);
+  for(const id of ["kids-worksheets","anime-character","image-converter","calculator","pdf-merge","json-formatter"])assert.ok(html.includes("./tools/"+id+"/"),id);
   assert.doesNotMatch(html,/class="directory-resume"|href="\.\/sites\/"/);
   assert.doesNotMatch(html,/<section class="atelier-hero">/);
  }
